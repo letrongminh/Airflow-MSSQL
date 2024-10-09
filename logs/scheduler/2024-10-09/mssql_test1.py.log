@@ -1244,3 +1244,311 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named 'pytest'
 [2024-10-09T02:10:38.623+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/mssql_test1.py
 [2024-10-09T02:10:38.641+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test1.py took 0.034 seconds
+[2024-10-09T02:11:09.472+0000] {processor.py:186} INFO - Started process (PID=5685) to work on /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:11:09.474+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test1.py for tasks to queue
+[2024-10-09T02:11:09.477+0000] {logging_mixin.py:190} INFO - [2024-10-09T02:11:09.476+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:11:09.482+0000] {logging_mixin.py:190} INFO - [2024-10-09T02:11:09.480+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/mssql_test1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/mssql_test1.py", line 28, in <module>
+    import pytest
+ModuleNotFoundError: No module named 'pytest'
+[2024-10-09T02:11:09.483+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:11:09.518+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test1.py took 0.054 seconds
+[2024-10-09T02:11:39.887+0000] {processor.py:186} INFO - Started process (PID=5750) to work on /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:11:39.888+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test1.py for tasks to queue
+[2024-10-09T02:11:39.891+0000] {logging_mixin.py:190} INFO - [2024-10-09T02:11:39.890+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:11:39.894+0000] {logging_mixin.py:190} INFO - [2024-10-09T02:11:39.893+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/mssql_test1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/mssql_test1.py", line 28, in <module>
+    import pytest
+ModuleNotFoundError: No module named 'pytest'
+[2024-10-09T02:11:39.895+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:11:39.912+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test1.py took 0.032 seconds
+[2024-10-09T02:12:10.243+0000] {processor.py:186} INFO - Started process (PID=5815) to work on /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:12:10.244+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test1.py for tasks to queue
+[2024-10-09T02:12:10.246+0000] {logging_mixin.py:190} INFO - [2024-10-09T02:12:10.246+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:12:10.250+0000] {logging_mixin.py:190} INFO - [2024-10-09T02:12:10.249+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/mssql_test1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/mssql_test1.py", line 28, in <module>
+    import pytest
+ModuleNotFoundError: No module named 'pytest'
+[2024-10-09T02:12:10.250+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:12:10.271+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test1.py took 0.034 seconds
+[2024-10-09T02:12:40.911+0000] {processor.py:186} INFO - Started process (PID=5880) to work on /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:12:40.912+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test1.py for tasks to queue
+[2024-10-09T02:12:40.914+0000] {logging_mixin.py:190} INFO - [2024-10-09T02:12:40.914+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:12:40.918+0000] {logging_mixin.py:190} INFO - [2024-10-09T02:12:40.917+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/mssql_test1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/mssql_test1.py", line 28, in <module>
+    import pytest
+ModuleNotFoundError: No module named 'pytest'
+[2024-10-09T02:12:40.918+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:12:40.936+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test1.py took 0.032 seconds
+[2024-10-09T02:13:11.429+0000] {processor.py:186} INFO - Started process (PID=5945) to work on /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:13:11.430+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test1.py for tasks to queue
+[2024-10-09T02:13:11.437+0000] {logging_mixin.py:190} INFO - [2024-10-09T02:13:11.437+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:13:11.442+0000] {logging_mixin.py:190} INFO - [2024-10-09T02:13:11.441+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/mssql_test1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/mssql_test1.py", line 28, in <module>
+    import pytest
+ModuleNotFoundError: No module named 'pytest'
+[2024-10-09T02:13:11.442+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:13:11.463+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test1.py took 0.041 seconds
+[2024-10-09T02:13:42.316+0000] {processor.py:186} INFO - Started process (PID=6009) to work on /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:13:42.317+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test1.py for tasks to queue
+[2024-10-09T02:13:42.320+0000] {logging_mixin.py:190} INFO - [2024-10-09T02:13:42.319+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:13:42.323+0000] {logging_mixin.py:190} INFO - [2024-10-09T02:13:42.322+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/mssql_test1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/mssql_test1.py", line 28, in <module>
+    import pytest
+ModuleNotFoundError: No module named 'pytest'
+[2024-10-09T02:13:42.324+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:13:42.341+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test1.py took 0.031 seconds
+[2024-10-09T02:14:12.654+0000] {processor.py:186} INFO - Started process (PID=6074) to work on /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:14:12.656+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test1.py for tasks to queue
+[2024-10-09T02:14:12.661+0000] {logging_mixin.py:190} INFO - [2024-10-09T02:14:12.661+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:14:12.667+0000] {logging_mixin.py:190} INFO - [2024-10-09T02:14:12.665+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/mssql_test1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/mssql_test1.py", line 28, in <module>
+    import pytest
+ModuleNotFoundError: No module named 'pytest'
+[2024-10-09T02:14:12.668+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:14:12.688+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test1.py took 0.044 seconds
+[2024-10-09T02:14:42.878+0000] {processor.py:186} INFO - Started process (PID=6138) to work on /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:14:42.880+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test1.py for tasks to queue
+[2024-10-09T02:14:42.883+0000] {logging_mixin.py:190} INFO - [2024-10-09T02:14:42.882+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:14:42.887+0000] {logging_mixin.py:190} INFO - [2024-10-09T02:14:42.886+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/mssql_test1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/mssql_test1.py", line 28, in <module>
+    import pytest
+ModuleNotFoundError: No module named 'pytest'
+[2024-10-09T02:14:42.887+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:14:42.910+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test1.py took 0.039 seconds
+[2024-10-09T02:15:13.842+0000] {processor.py:186} INFO - Started process (PID=6202) to work on /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:15:13.842+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test1.py for tasks to queue
+[2024-10-09T02:15:13.845+0000] {logging_mixin.py:190} INFO - [2024-10-09T02:15:13.845+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:15:13.849+0000] {logging_mixin.py:190} INFO - [2024-10-09T02:15:13.848+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/mssql_test1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/mssql_test1.py", line 28, in <module>
+    import pytest
+ModuleNotFoundError: No module named 'pytest'
+[2024-10-09T02:15:13.849+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:15:13.869+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test1.py took 0.033 seconds
+[2024-10-09T02:15:44.167+0000] {processor.py:186} INFO - Started process (PID=6267) to work on /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:15:44.169+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test1.py for tasks to queue
+[2024-10-09T02:15:44.171+0000] {logging_mixin.py:190} INFO - [2024-10-09T02:15:44.171+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:15:44.175+0000] {logging_mixin.py:190} INFO - [2024-10-09T02:15:44.174+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/mssql_test1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/mssql_test1.py", line 28, in <module>
+    import pytest
+ModuleNotFoundError: No module named 'pytest'
+[2024-10-09T02:15:44.176+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:15:44.195+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test1.py took 0.036 seconds
+[2024-10-09T02:16:14.593+0000] {processor.py:186} INFO - Started process (PID=6332) to work on /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:16:14.594+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test1.py for tasks to queue
+[2024-10-09T02:16:14.597+0000] {logging_mixin.py:190} INFO - [2024-10-09T02:16:14.596+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:16:14.601+0000] {logging_mixin.py:190} INFO - [2024-10-09T02:16:14.600+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/mssql_test1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/mssql_test1.py", line 28, in <module>
+    import pytest
+ModuleNotFoundError: No module named 'pytest'
+[2024-10-09T02:16:14.602+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:16:14.624+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test1.py took 0.042 seconds
+[2024-10-09T02:16:45.075+0000] {processor.py:186} INFO - Started process (PID=6397) to work on /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:16:45.076+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test1.py for tasks to queue
+[2024-10-09T02:16:45.079+0000] {logging_mixin.py:190} INFO - [2024-10-09T02:16:45.078+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:16:45.082+0000] {logging_mixin.py:190} INFO - [2024-10-09T02:16:45.081+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/mssql_test1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/mssql_test1.py", line 28, in <module>
+    import pytest
+ModuleNotFoundError: No module named 'pytest'
+[2024-10-09T02:16:45.083+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:16:45.102+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test1.py took 0.033 seconds
+[2024-10-09T02:17:15.275+0000] {processor.py:186} INFO - Started process (PID=6462) to work on /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:17:15.276+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test1.py for tasks to queue
+[2024-10-09T02:17:15.278+0000] {logging_mixin.py:190} INFO - [2024-10-09T02:17:15.278+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:17:15.282+0000] {logging_mixin.py:190} INFO - [2024-10-09T02:17:15.281+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/mssql_test1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/mssql_test1.py", line 28, in <module>
+    import pytest
+ModuleNotFoundError: No module named 'pytest'
+[2024-10-09T02:17:15.282+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:17:15.300+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test1.py took 0.033 seconds
+[2024-10-09T02:17:45.940+0000] {processor.py:186} INFO - Started process (PID=6527) to work on /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:17:45.942+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test1.py for tasks to queue
+[2024-10-09T02:17:45.944+0000] {logging_mixin.py:190} INFO - [2024-10-09T02:17:45.944+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:17:45.948+0000] {logging_mixin.py:190} INFO - [2024-10-09T02:17:45.947+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/mssql_test1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/mssql_test1.py", line 28, in <module>
+    import pytest
+ModuleNotFoundError: No module named 'pytest'
+[2024-10-09T02:17:45.948+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:17:45.967+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test1.py took 0.034 seconds
+[2024-10-09T02:18:16.469+0000] {processor.py:186} INFO - Started process (PID=6592) to work on /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:18:16.470+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test1.py for tasks to queue
+[2024-10-09T02:18:16.472+0000] {logging_mixin.py:190} INFO - [2024-10-09T02:18:16.472+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:18:16.476+0000] {logging_mixin.py:190} INFO - [2024-10-09T02:18:16.474+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/mssql_test1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/mssql_test1.py", line 28, in <module>
+    import pytest
+ModuleNotFoundError: No module named 'pytest'
+[2024-10-09T02:18:16.476+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:18:16.493+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test1.py took 0.031 seconds
+[2024-10-09T02:18:46.923+0000] {processor.py:186} INFO - Started process (PID=6656) to work on /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:18:46.924+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test1.py for tasks to queue
+[2024-10-09T02:18:46.926+0000] {logging_mixin.py:190} INFO - [2024-10-09T02:18:46.926+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:18:46.930+0000] {logging_mixin.py:190} INFO - [2024-10-09T02:18:46.929+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/mssql_test1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/mssql_test1.py", line 28, in <module>
+    import pytest
+ModuleNotFoundError: No module named 'pytest'
+[2024-10-09T02:18:46.930+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:18:46.949+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test1.py took 0.033 seconds
+[2024-10-09T02:19:17.494+0000] {processor.py:186} INFO - Started process (PID=6720) to work on /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:19:17.495+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test1.py for tasks to queue
+[2024-10-09T02:19:17.498+0000] {logging_mixin.py:190} INFO - [2024-10-09T02:19:17.498+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:19:17.503+0000] {logging_mixin.py:190} INFO - [2024-10-09T02:19:17.501+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/mssql_test1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/mssql_test1.py", line 28, in <module>
+    import pytest
+ModuleNotFoundError: No module named 'pytest'
+[2024-10-09T02:19:17.504+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:19:17.527+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test1.py took 0.042 seconds
+[2024-10-09T02:19:48.109+0000] {processor.py:186} INFO - Started process (PID=6785) to work on /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:19:48.111+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test1.py for tasks to queue
+[2024-10-09T02:19:48.114+0000] {logging_mixin.py:190} INFO - [2024-10-09T02:19:48.114+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:19:48.120+0000] {logging_mixin.py:190} INFO - [2024-10-09T02:19:48.118+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/mssql_test1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/mssql_test1.py", line 28, in <module>
+    import pytest
+ModuleNotFoundError: No module named 'pytest'
+[2024-10-09T02:19:48.121+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:19:48.148+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test1.py took 0.047 seconds
+[2024-10-09T02:20:18.273+0000] {processor.py:186} INFO - Started process (PID=6851) to work on /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:20:18.274+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test1.py for tasks to queue
+[2024-10-09T02:20:18.277+0000] {logging_mixin.py:190} INFO - [2024-10-09T02:20:18.276+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:20:18.281+0000] {logging_mixin.py:190} INFO - [2024-10-09T02:20:18.280+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/mssql_test1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/mssql_test1.py", line 28, in <module>
+    import pytest
+ModuleNotFoundError: No module named 'pytest'
+[2024-10-09T02:20:18.282+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:20:18.301+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test1.py took 0.035 seconds
+[2024-10-09T02:20:48.645+0000] {processor.py:186} INFO - Started process (PID=6916) to work on /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:20:48.646+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test1.py for tasks to queue
+[2024-10-09T02:20:48.649+0000] {logging_mixin.py:190} INFO - [2024-10-09T02:20:48.649+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:20:48.653+0000] {logging_mixin.py:190} INFO - [2024-10-09T02:20:48.652+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/mssql_test1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/mssql_test1.py", line 28, in <module>
+    import pytest
+ModuleNotFoundError: No module named 'pytest'
+[2024-10-09T02:20:48.654+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:20:48.673+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test1.py took 0.036 seconds
+[2024-10-09T02:21:19.609+0000] {processor.py:186} INFO - Started process (PID=6981) to work on /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:21:19.612+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test1.py for tasks to queue
+[2024-10-09T02:21:19.616+0000] {logging_mixin.py:190} INFO - [2024-10-09T02:21:19.615+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:21:19.621+0000] {logging_mixin.py:190} INFO - [2024-10-09T02:21:19.619+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/mssql_test1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/mssql_test1.py", line 28, in <module>
+    import pytest
+ModuleNotFoundError: No module named 'pytest'
+[2024-10-09T02:21:19.622+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:21:19.668+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test1.py took 0.067 seconds
+[2024-10-09T02:21:49.860+0000] {processor.py:186} INFO - Started process (PID=7046) to work on /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:21:49.861+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test1.py for tasks to queue
+[2024-10-09T02:21:49.870+0000] {logging_mixin.py:190} INFO - [2024-10-09T02:21:49.869+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:21:49.877+0000] {logging_mixin.py:190} INFO - [2024-10-09T02:21:49.874+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/mssql_test1.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/mssql_test1.py", line 28, in <module>
+    import pytest
+ModuleNotFoundError: No module named 'pytest'
+[2024-10-09T02:21:49.878+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/mssql_test1.py
+[2024-10-09T02:21:49.914+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test1.py took 0.071 seconds
