@@ -68,7 +68,7 @@ x-airflow-common:
     AIRFLOW__SCHEDULER__ENABLE_HEALTH_CHECK: 'true'
     # WARNING: Use _PIP_ADDITIONAL_REQUIREMENTS option ONLY for a quick checks
     # for other purpose (development, test and especially production usage) build/extend Airflow image.
-    _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:-}
+    _PIP_ADDITIONAL_REQUIREMENTS: ${_PIP_ADDITIONAL_REQUIREMENTS:-pyodbc; apache-airflow-providers-common-sql; apache-airflow-providers-microsoft-mssql; pytest; pymssql; methodtools}
     # The following line can be used to set a custom config file, stored in the local config folder
     # If you want to use it, outcomment it and replace airflow.cfg with the name of your config file
     # AIRFLOW_CONFIG: '/opt/airflow/config/airflow.cfg'
@@ -86,6 +86,27 @@ x-airflow-common:
       condition: service_healthy
 
 services:
+
+### mssql server
+  mssql:
+    # image: "mcr.microsoft.com/mssql/server:2022-latest"
+    image: trongminhjr/custom-mssql:v1
+    container_name: mssqlserver
+    restart: always
+    hostname: mssql
+    user: root
+    environment:
+      SA_PASSWORD: pw_123123
+      ACCEPT_EULA: Y
+      MSSQL_PID: Express
+
+    volumes:
+      - ./mssqlvolume:/var/opt/mssql/data
+      - ./backup:/var/opt/mssql/backup
+    ports:
+      - "1433:1433"
+
+### airflow components
   postgres:
     image: postgres:13
     environment:

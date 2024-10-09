@@ -1,0 +1,150 @@
+[2024-10-09T08:59:09.119+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-09T08:59:09.155+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_mssql.create_country_table manual__2024-10-09T08:59:04.253104+00:00 [queued]>
+[2024-10-09T08:59:09.169+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_mssql.create_country_table manual__2024-10-09T08:59:04.253104+00:00 [queued]>
+[2024-10-09T08:59:09.170+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2024-10-09T08:59:09.189+0000] {taskinstance.py:2888} INFO - Executing <Task(SQLExecuteQueryOperator): create_country_table> on 2024-10-09 08:59:04.253104+00:00
+[2024-10-09T08:59:09.207+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=607) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-10-09T08:59:09.209+0000] {standard_task_runner.py:72} INFO - Started process 612 to run task
+[2024-10-09T08:59:09.215+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'example_mssql', 'create_country_table', 'manual__2024-10-09T08:59:04.253104+00:00', '--job-id', '19', '--raw', '--subdir', 'DAGS_FOLDER/mssql_test1.py', '--cfg-path', '/tmp/tmp9cy55wo8']
+[2024-10-09T08:59:09.218+0000] {standard_task_runner.py:105} INFO - Job 19: Subtask create_country_table
+[2024-10-09T08:59:09.349+0000] {task_command.py:467} INFO - Running <TaskInstance: example_mssql.create_country_table manual__2024-10-09T08:59:04.253104+00:00 [running]> on host 633f9a607934
+[2024-10-09T08:59:09.571+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='example_mssql' AIRFLOW_CTX_TASK_ID='create_country_table' AIRFLOW_CTX_EXECUTION_DATE='2024-10-09T08:59:04.253104+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-09T08:59:04.253104+00:00'
+[2024-10-09T08:59:09.574+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-10-09T08:59:09.576+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-10-09T08:59:09.576+0000] {logging_mixin.py:190} INFO - Current task name:create_country_table state:running start_date:2024-10-09 08:59:09.156522+00:00
+[2024-10-09T08:59:09.576+0000] {logging_mixin.py:190} INFO - Dag name:example_mssql and current dag run status:running
+[2024-10-09T08:59:09.577+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-09T08:59:09.577+0000] {sql.py:266} INFO - Executing: 
+        CREATE TABLE Country (
+            country_id INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+            name TEXT,
+            continent TEXT
+        );
+        
+[2024-10-09T08:59:09.604+0000] {base.py:84} INFO - Retrieving connection '***_mssql'
+[2024-10-09T08:59:09.627+0000] {base.py:84} INFO - Retrieving connection '***_mssql'
+[2024-10-09T08:59:09.668+0000] {taskinstance.py:3310} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "src/pymssql/_pymssql.pyx", line 650, in pymssql._pymssql.connect
+  File "src/pymssql/_mssql.pyx", line 2158, in pymssql._mssql.connect
+  File "src/pymssql/_mssql.pyx", line 712, in pymssql._mssql.MSSQLConnection.__init__
+  File "src/pymssql/_mssql.pyx", line 1884, in pymssql._mssql.maybe_raise_MSSQLDatabaseException
+  File "src/pymssql/_mssql.pyx", line 1901, in pymssql._mssql.raise_MSSQLDatabaseException
+pymssql._mssql.MSSQLDatabaseException: (18456, b"Login failed for user 'sa'.DB-Lib error message 20018, severity 14:\nGeneral SQL Server error: Check messages from the SQL Server\nDB-Lib error message 20002, severity 9:\nAdaptive Server connection failed (mssqlserver)\nDB-Lib error message 20002, severity 9:\nAdaptive Server connection failed (mssqlserver)\n")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/common/sql/operators/sql.py", line 272, in execute
+    output = hook.run(
+             ^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/common/sql/hooks/sql.py", line 452, in run
+    with self._create_autocommit_connection(autocommit) as conn:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/common/sql/hooks/sql.py", line 574, in _create_autocommit_connection
+    with closing(self.get_conn()) as conn:
+                 ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/microsoft/mssql/hooks/mssql.py", line 162, in get_conn
+    return pymssql.connect(
+           ^^^^^^^^^^^^^^^^
+  File "src/pymssql/_pymssql.pyx", line 659, in pymssql._pymssql.connect
+pymssql.exceptions.OperationalError: (18456, b"Login failed for user 'sa'.DB-Lib error message 20018, severity 14:\nGeneral SQL Server error: Check messages from the SQL Server\nDB-Lib error message 20002, severity 9:\nAdaptive Server connection failed (mssqlserver)\nDB-Lib error message 20002, severity 9:\nAdaptive Server connection failed (mssqlserver)\n")
+[2024-10-09T08:59:09.693+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2024-10-09T08:59:09.694+0000] {logging_mixin.py:190} INFO - Task start:2024-10-09 08:59:09.156522+00:00 end:2024-10-09 08:59:09.692470+00:00 duration:0.535948
+[2024-10-09T08:59:09.694+0000] {logging_mixin.py:190} INFO - Task:<Task(SQLExecuteQueryOperator): create_country_table> dag:<DAG: example_mssql> dagrun:<DagRun example_mssql @ 2024-10-09 08:59:04.253104+00:00: manual__2024-10-09T08:59:04.253104+00:00, state:running, queued_at: 2024-10-09 08:59:04.276730+00:00. externally triggered: True>
+[2024-10-09T08:59:09.695+0000] {logging_mixin.py:190} INFO - Failure caused by (18456, b"Login failed for user 'sa'.DB-Lib error message 20018, severity 14:\nGeneral SQL Server error: Check messages from the SQL Server\nDB-Lib error message 20002, severity 9:\nAdaptive Server connection failed (mssqlserver)\nDB-Lib error message 20002, severity 9:\nAdaptive Server connection failed (mssqlserver)\n")
+[2024-10-09T08:59:09.695+0000] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=example_mssql, task_id=create_country_table, run_id=manual__2024-10-09T08:59:04.253104+00:00, execution_date=20241009T085904, start_date=20241009T085909, end_date=20241009T085909
+[2024-10-09T08:59:09.716+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-09T08:59:09.717+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 19 for task create_country_table ((18456, b"Login failed for user 'sa'.DB-Lib error message 20018, severity 14:\nGeneral SQL Server error: Check messages from the SQL Server\nDB-Lib error message 20002, severity 9:\nAdaptive Server connection failed (mssqlserver)\nDB-Lib error message 20002, severity 9:\nAdaptive Server connection failed (mssqlserver)\n"); 612)
+Traceback (most recent call last):
+  File "src/pymssql/_pymssql.pyx", line 650, in pymssql._pymssql.connect
+  File "src/pymssql/_mssql.pyx", line 2158, in pymssql._mssql.connect
+  File "src/pymssql/_mssql.pyx", line 712, in pymssql._mssql.MSSQLConnection.__init__
+  File "src/pymssql/_mssql.pyx", line 1884, in pymssql._mssql.maybe_raise_MSSQLDatabaseException
+  File "src/pymssql/_mssql.pyx", line 1901, in pymssql._mssql.raise_MSSQLDatabaseException
+pymssql._mssql.MSSQLDatabaseException: (18456, b"Login failed for user 'sa'.DB-Lib error message 20018, severity 14:\nGeneral SQL Server error: Check messages from the SQL Server\nDB-Lib error message 20002, severity 9:\nAdaptive Server connection failed (mssqlserver)\nDB-Lib error message 20002, severity 9:\nAdaptive Server connection failed (mssqlserver)\n")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 115, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3004, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3158, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3182, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/common/sql/operators/sql.py", line 272, in execute
+    output = hook.run(
+             ^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/common/sql/hooks/sql.py", line 452, in run
+    with self._create_autocommit_connection(autocommit) as conn:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/common/sql/hooks/sql.py", line 574, in _create_autocommit_connection
+    with closing(self.get_conn()) as conn:
+                 ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/microsoft/mssql/hooks/mssql.py", line 162, in get_conn
+    return pymssql.connect(
+           ^^^^^^^^^^^^^^^^
+  File "src/pymssql/_pymssql.pyx", line 659, in pymssql._pymssql.connect
+pymssql.exceptions.OperationalError: (18456, b"Login failed for user 'sa'.DB-Lib error message 20018, severity 14:\nGeneral SQL Server error: Check messages from the SQL Server\nDB-Lib error message 20002, severity 9:\nAdaptive Server connection failed (mssqlserver)\nDB-Lib error message 20002, severity 9:\nAdaptive Server connection failed (mssqlserver)\n")
+[2024-10-09T08:59:09.757+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 1
+[2024-10-09T08:59:09.803+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-10-09T08:59:09.807+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

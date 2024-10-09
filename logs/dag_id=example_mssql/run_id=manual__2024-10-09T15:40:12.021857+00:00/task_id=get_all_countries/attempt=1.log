@@ -1,0 +1,31 @@
+[2024-10-09T15:41:12.649+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-09T15:41:12.791+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_mssql.get_all_countries manual__2024-10-09T15:40:12.021857+00:00 [queued]>
+[2024-10-09T15:41:12.898+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_mssql.get_all_countries manual__2024-10-09T15:40:12.021857+00:00 [queued]>
+[2024-10-09T15:41:12.899+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2024-10-09T15:41:13.121+0000] {taskinstance.py:2888} INFO - Executing <Task(SQLExecuteQueryOperator): get_all_countries> on 2024-10-09 15:40:12.021857+00:00
+[2024-10-09T15:41:13.217+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=693) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-10-09T15:41:13.263+0000] {standard_task_runner.py:72} INFO - Started process 695 to run task
+[2024-10-09T15:41:13.270+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'example_mssql', 'get_all_countries', 'manual__2024-10-09T15:40:12.021857+00:00', '--job-id', '60', '--raw', '--subdir', 'DAGS_FOLDER/mssql_test1.py', '--cfg-path', '/tmp/tmp4iemctwg']
+[2024-10-09T15:41:13.277+0000] {standard_task_runner.py:105} INFO - Job 60: Subtask get_all_countries
+[2024-10-09T15:41:13.752+0000] {task_command.py:467} INFO - Running <TaskInstance: example_mssql.get_all_countries manual__2024-10-09T15:40:12.021857+00:00 [running]> on host 37a08abe3d9a
+[2024-10-09T15:41:14.573+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='example_mssql' AIRFLOW_CTX_TASK_ID='get_all_countries' AIRFLOW_CTX_EXECUTION_DATE='2024-10-09T15:40:12.021857+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-09T15:40:12.021857+00:00'
+[2024-10-09T15:41:14.587+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-10-09T15:41:14.591+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-10-09T15:41:14.597+0000] {logging_mixin.py:190} INFO - Current task name:get_all_countries state:running start_date:2024-10-09 15:41:12.792244+00:00
+[2024-10-09T15:41:14.598+0000] {logging_mixin.py:190} INFO - Dag name:example_mssql and current dag run status:running
+[2024-10-09T15:41:14.601+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-09T15:41:14.603+0000] {sql.py:266} INFO - Executing: SELECT * FROM Country;
+[2024-10-09T15:41:14.696+0000] {base.py:84} INFO - Retrieving connection '***_mssql'
+[2024-10-09T15:41:14.768+0000] {base.py:84} INFO - Retrieving connection '***_mssql'
+[2024-10-09T15:41:15.116+0000] {sql.py:542} INFO - Running statement: SELECT * FROM Country;, parameters: None
+[2024-10-09T15:41:15.384+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-09T15:41:15.387+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=example_mssql, task_id=get_all_countries, run_id=manual__2024-10-09T15:40:12.021857+00:00, execution_date=20241009T154012, start_date=20241009T154112, end_date=20241009T154115
+[2024-10-09T15:41:15.455+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-10-09T15:41:15.463+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-10-09T15:41:15.465+0000] {logging_mixin.py:190} INFO - Dag name:example_mssql queued_at:2024-10-09 15:40:12.174932+00:00
+[2024-10-09T15:41:15.470+0000] {logging_mixin.py:190} INFO - Task hostname:37a08abe3d9a operator:SQLExecuteQueryOperator
+[2024-10-09T15:41:15.557+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-10-09T15:41:15.795+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-10-09T15:41:15.803+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

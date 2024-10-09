@@ -11,19 +11,19 @@ def email():
     from sendgrid.helpers.mail import Mail
 
     # Cấu hình email đơn giản không có đính kèm
-    message = Mail(
-        from_email='',
-        to_emails='',
-        subject='Hello',
-        html_content='Hello, all tasks are completed!'
-    )
+    # message = Mail(
+    #     from_email='',
+    #     to_emails='',
+    #     subject='Hello',
+    #     html_content='Hello, all tasks are completed!'
+    # )
 
-    try:
-        sg = SendGridAPIClient("Send Grid Token here")  # Thay "Send Grid Token here" bằng API Key của SendGrid
-        response = sg.send(message)
-        print(f"Email sent successfully with status code: {response.status_code}")
-    except Exception as e:
-        print(f"Failed to send email: {str(e)}")
+    # try:
+    #     sg = SendGridAPIClient("Send Grid Token here")  # Thay "Send Grid Token here" bằng API Key của SendGrid
+    #     response = sg.send(message)
+    #     print(f"Email sent successfully with status code: {response.status_code}")
+    # except Exception as e:
+    #     print(f"Failed to send email: {str(e)}")
 
 # Định nghĩa DAG
 dag = DAG(

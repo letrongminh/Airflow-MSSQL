@@ -1,0 +1,43 @@
+[2024-10-09T15:40:25.776+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-09T15:40:25.820+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_mssql.create_country_table manual__2024-10-09T15:40:12.021857+00:00 [queued]>
+[2024-10-09T15:40:25.843+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_mssql.create_country_table manual__2024-10-09T15:40:12.021857+00:00 [queued]>
+[2024-10-09T15:40:25.844+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2024-10-09T15:40:25.892+0000] {taskinstance.py:2888} INFO - Executing <Task(SQLExecuteQueryOperator): create_country_table> on 2024-10-09 15:40:12.021857+00:00
+[2024-10-09T15:40:25.942+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=670) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-10-09T15:40:25.952+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'example_mssql', 'create_country_table', 'manual__2024-10-09T15:40:12.021857+00:00', '--job-id', '56', '--raw', '--subdir', 'DAGS_FOLDER/mssql_test1.py', '--cfg-path', '/tmp/tmpnvds_e1k']
+[2024-10-09T15:40:25.956+0000] {standard_task_runner.py:72} INFO - Started process 672 to run task
+[2024-10-09T15:40:25.958+0000] {standard_task_runner.py:105} INFO - Job 56: Subtask create_country_table
+[2024-10-09T15:40:26.240+0000] {task_command.py:467} INFO - Running <TaskInstance: example_mssql.create_country_table manual__2024-10-09T15:40:12.021857+00:00 [running]> on host 37a08abe3d9a
+[2024-10-09T15:40:26.599+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='example_mssql' AIRFLOW_CTX_TASK_ID='create_country_table' AIRFLOW_CTX_EXECUTION_DATE='2024-10-09T15:40:12.021857+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-09T15:40:12.021857+00:00'
+[2024-10-09T15:40:26.603+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-10-09T15:40:26.604+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-10-09T15:40:26.605+0000] {logging_mixin.py:190} INFO - Current task name:create_country_table state:running start_date:2024-10-09 15:40:25.821797+00:00
+[2024-10-09T15:40:26.606+0000] {logging_mixin.py:190} INFO - Dag name:example_mssql and current dag run status:running
+[2024-10-09T15:40:26.607+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-09T15:40:26.608+0000] {sql.py:266} INFO - Executing: 
+        CREATE TABLE Country (
+            country_id INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+            name TEXT,
+            continent TEXT
+        );
+        
+[2024-10-09T15:40:26.651+0000] {base.py:84} INFO - Retrieving connection '***_mssql'
+[2024-10-09T15:40:26.676+0000] {base.py:84} INFO - Retrieving connection '***_mssql'
+[2024-10-09T15:40:26.802+0000] {sql.py:542} INFO - Running statement: 
+        CREATE TABLE Country (
+            country_id INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+            name TEXT,
+            continent TEXT
+        );
+        , parameters: None
+[2024-10-09T15:40:26.879+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-09T15:40:26.881+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=example_mssql, task_id=create_country_table, run_id=manual__2024-10-09T15:40:12.021857+00:00, execution_date=20241009T154012, start_date=20241009T154025, end_date=20241009T154026
+[2024-10-09T15:40:26.907+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-10-09T15:40:26.908+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-10-09T15:40:26.908+0000] {logging_mixin.py:190} INFO - Dag name:example_mssql queued_at:2024-10-09 15:40:12.174932+00:00
+[2024-10-09T15:40:26.909+0000] {logging_mixin.py:190} INFO - Task hostname:37a08abe3d9a operator:SQLExecuteQueryOperator
+[2024-10-09T15:40:26.956+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-10-09T15:40:27.047+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-10-09T15:40:27.052+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
