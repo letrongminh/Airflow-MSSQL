@@ -75,8 +75,9 @@ from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
 from datetime import datetime, timedelta
 import pymssql
+import time  # Dùng để chờ giữa các lần kiểm tra trạng thái job
 
-# Define default params for DAG
+# Định nghĩa các tham số mặc định cho DAG
 default_args = {
     'owner': 'airflow',
     'depends_on_past': False,
@@ -88,7 +89,7 @@ default_args = {
     'retry_delay': timedelta(minutes=5)
 }
 
-# Init DAG
+# Khởi tạo DAG
 dag = DAG(
     'mssql_agent_dag',
     default_args=default_args,
@@ -97,7 +98,7 @@ dag = DAG(
     tags=['minhlt9'],
 )
 
-# Define connection to connect to SQL Server
+# Định nghĩa thông tin kết nối tới SQL Server
 sql_server_conn = {
     'server': 'mssqlserver',
     'user': 'sa',
@@ -105,7 +106,7 @@ sql_server_conn = {
     'database': 'NVDB'
 }
 
-# Connect to SQL Server
+# Hàm kết nối tới SQL Server
 def get_sql_server_connection():
     conn = pymssql.connect(
         server=sql_server_conn['server'],
@@ -115,12 +116,12 @@ def get_sql_server_connection():
     )
     return conn
 
-# Task: Create customer table
+# Task: Tạo bảng và thêm dữ liệu khách hàng
 def create_customer_table():
     conn = get_sql_server_connection()
     cursor = conn.cursor()
 
-    # Create Customer table if it isn't existing
+    # Tạo bảng Customer nếu chưa tồn tại
     create_table_query = """
     IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='Customer' AND xtype='U')
     CREATE TABLE Customer (
@@ -134,7 +135,7 @@ def create_customer_table():
     conn.commit()
     print("Customer table created successfully.")
 
-    # Insert data
+    # Chèn một số dữ liệu mẫu vào bảng Customer
     insert_data_query = """
     INSERT INTO Customer (Name, Email, Phone) 
     VALUES 
@@ -149,64 +150,142 @@ def create_customer_table():
     cursor.close()
     conn.close()
 
-# Task: Execute job SQL Agent
-def execute_sql_agent_job(job_name):
-    # use get_sql_server_connection function to connect to SQL Server
+# Task: Tạo một SQL Server Agent Job đơn giản
+# Hàm tạo SQL Server Agent Job với lịch trình chính xác
+def create_sql_agent_job(job_name):
     conn = get_sql_server_connection()
     cursor = conn.cursor()
 
-    # execute SQL Server Agent job
+    # Tạo SQL Server Agent Job với một bước đơn giản
+    create_job_query = f"""
+    IF NOT EXISTS (SELECT * FROM msdb.dbo.sysjobs WHERE name = '{job_name}')
+    BEGIN
+        -- Tạo job mới
+        EXEC msdb.dbo.sp_add_job @job_name = '{job_name}';
+
+        -- Thêm bước vào job, ví dụ thực hiện SELECT trên bảng Customer
+        EXEC msdb.dbo.sp_add_jobstep 
+            @job_name = '{job_name}', 
+            @step_name = 'Select from Customer', 
+            @subsystem = 'TSQL',
+            @command = 'SELECT * FROM NVDB.dbo.Customer',
+            @on_success_action = 1, -- Chuyển sang bước tiếp theo nếu thành công
+            @on_fail_action = 2; -- Dừng lại nếu thất bại
+
+        -- Tạo lịch chạy job hàng ngày với `@freq_interval = 1`
+        EXEC msdb.dbo.sp_add_jobschedule 
+            @job_name = '{job_name}', 
+            @name = 'DailySchedule', 
+            @freq_type = 4,  -- Chạy hàng ngày
+            @freq_interval = 1,  -- Chạy mỗi 1 ngày
+            @active_start_time = 10000; -- Chạy vào 10:00 sáng
+
+        -- Chỉ định job cho SQL Server Agent
+        EXEC msdb.dbo.sp_add_jobserver 
+            @job_name = '{job_name}', 
+            @server_name = @@SERVERNAME;
+
+        PRINT 'Job created successfully.';
+    END
+    ELSE
+    BEGIN
+        PRINT 'Job already exists.';
+    END
+    """
+    cursor.execute(create_job_query)
+    conn.commit()
+    print(f"SQL Server Agent job '{job_name}' created successfully.")
+    
+    cursor.close()
+    conn.close()
+
+
+# Task: Thực thi job SQL Agent và kiểm tra trạng thái từng step trong job
+def execute_sql_agent_job(job_name):
+    conn = get_sql_server_connection()
+    cursor = conn.cursor()
+
+    # Thực thi SQL Server Agent job
     cursor.callproc('msdb.dbo.sp_start_job', (job_name,))
     conn.commit()
     print(f"Job {job_name} started successfully.")
 
-    # Check status step in job
-    query = f"""
-    SELECT step_id, step_name, current_execution_status 
-    FROM msdb.dbo.sysjobsteps 
-    WHERE job_id IN (SELECT job_id FROM msdb.dbo.sysjobs WHERE name = '{job_name}')
-    """
-    cursor.execute(query)
-    steps_status = cursor.fetchall()
+    # Kiểm tra trạng thái của từng bước trong job
+    job_id_query = f"SELECT job_id FROM msdb.dbo.sysjobs WHERE name = '{job_name}'"
+    cursor.execute(job_id_query)
+    job_id = cursor.fetchone()[0]
 
-    for step in steps_status:
-        step_id, step_name, current_execution_status = step
-        if current_execution_status == 1:  # Success
-            print(f"Step {step_id}: {step_name} executed successfully.")
+    # Dùng vòng lặp để kiểm tra trạng thái cho đến khi job hoàn thành
+    job_completed = False
+    while not job_completed:
+        # Truy vấn trạng thái job từ bảng sysjobactivity
+        job_status_query = f"""
+        SELECT ja.run_status, 
+               js.step_id, 
+               js.step_name 
+        FROM msdb.dbo.sysjobhistory ja
+        INNER JOIN msdb.dbo.sysjobs j ON ja.job_id = j.job_id
+        INNER JOIN msdb.dbo.sysjobsteps js ON ja.job_id = js.job_id AND ja.step_id = js.step_id
+        WHERE ja.job_id = '{job_id}' AND ja.step_id > 0
+        ORDER BY ja.run_date DESC, ja.run_time DESC
+        """
+        cursor.execute(job_status_query)
+        step_status = cursor.fetchall()
+
+        # Duyệt qua các step để in ra trạng thái
+        for step in step_status:
+            run_status, step_id, step_name = step
+            if run_status == 1:  # Thành công
+                print(f"Step {step_id}: {step_name} executed successfully.")
+            elif run_status == 0:  # Thất bại
+                print(f"Step {step_id}: {step_name} execution failed.")
+            else:
+                print(f"Step {step_id}: {step_name} is still running.")
+
+        # Kiểm tra nếu job đã hoàn thành hoặc tất cả các bước đã được thực hiện
+        if all(status[0] in (0, 1) for status in step_status):
+            job_completed = True
         else:
-            print(f"Step {step_id}: {step_name} execution failed.")
+            time.sleep(5)  # Chờ 5 giây trước khi kiểm tra lại
+
+    print(f"Job {job_name} completed successfully.")
 
     cursor.close()
     conn.close()
 
-# Checking taskto connnect to SQL Server)
+# Task: Kiểm tra kết nối tới SQL Server
 def check_sql_server_connection():
     conn = get_sql_server_connection()
     if conn:
         print("Successfully connected to SQL Server!")
     conn.close()
 
-# Define task `check_connection` to check connection
+# Định nghĩa các task
 check_connection = PythonOperator(
     task_id='check_connection',
     python_callable=check_sql_server_connection,
     dag=dag,
 )
 
-# Define task `create_customer_table` to create Table and insert Customer data
 create_customer_table_task = PythonOperator(
     task_id='create_customer_table',
     python_callable=create_customer_table,
     dag=dag,
 )
 
-# Define task `execute_sql_agent_job` to execute job SQL Agent
-execute_job = PythonOperator(
-    task_id='execute_sql_agent_job',
-    python_callable=execute_sql_agent_job,
-    op_kwargs={'job_name': 'YourAgentJobName'},
+create_sql_job_task = PythonOperator(
+    task_id='create_sql_agent_job',
+    python_callable=create_sql_agent_job,
+    op_kwargs={'job_name': 'SimpleCustomerJob'},
     dag=dag,
 )
 
-# Graph definition
-check_connection >> create_customer_table_task >> execute_job
+execute_job = PythonOperator(
+    task_id='execute_sql_agent_job',
+    python_callable=execute_sql_agent_job,
+    op_kwargs={'job_name': 'SimpleCustomerJob'},
+    dag=dag,
+)
+
+# Thiết lập thứ tự các task
+check_connection >> create_customer_table_task >> create_sql_job_task >> execute_job
