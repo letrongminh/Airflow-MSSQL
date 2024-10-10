@@ -12,6 +12,7 @@ dag = DAG(
     'mssql_test2',
     default_args=default_args,
     schedule_interval=None,
+    tags=['minhlt9'],
 )
 
 create_table_mssql_task = MsSqlOperator(

@@ -27,7 +27,7 @@ with DAG(
     DAG_ID,
     schedule="@daily",
     start_date=datetime(2024, 10, 9),
-    tags=["example"],
+    tags=['minhlt9'],
     catchup=False,
 ) as dag:
     # [START howto_operator_mssql]
@@ -53,7 +53,7 @@ with DAG(
 
     @dag.task(task_id="insert_mssql_task")
     def insert_mssql_hook():
-        mssql_hook = MsSqlHook(mssql_conn_id="airflow_mssql", schema="master")
+        mssql_hook = MsSqlHook(mssql_conn_id="airflow_mssql", schema="NVDB")
 
         rows = [
             ("India", "Asia"),
