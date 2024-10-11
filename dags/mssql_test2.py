@@ -34,7 +34,7 @@ create_table_mssql_task = MsSqlOperator(
 
 @dag.task(task_id="insert_mssql_task")
 def insert_mssql_hook():
-    mssql_hook = MsSqlHook(mssql_conn_id='airflow_mssql', schema='master')
+    mssql_hook = MsSqlHook(mssql_conn_id='airflow_mssql', schema='NVDB')
     
     rows = [
         ('India', 'Asia'),
