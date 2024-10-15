@@ -1,0 +1,22 @@
+a4f82a437ff2
+*** Found local files:
+***   * /opt/airflow/logs/dag_id=mssql_agent_job_monitor/run_id=manual__2024-10-15T04:30:49.178333+00:00/task_id=wait_for_job_completion/attempt=1.log
+*** !!!! Please make sure that all your Airflow components (e.g. schedulers, webservers, workers and triggerer) have the same 'secret_key' configured in 'webserver' section and time is synchronized on all your machines (for example with ntpd)
+See more at https://airflow.apache.org/docs/apache-airflow/stable/configurations-ref.html#secret-key
+*** Could not read served logs: 403 Client Error: FORBIDDEN for url: http://a4f82a437ff2:8793/log/dag_id=mssql_agent_job_monitor/run_id=manual__2024-10-15T04:30:49.178333+00:00/task_id=wait_for_job_completion/attempt=1.log
+[2024-10-15, 04:30:53 UTC] {local_task_job_runner.py:123} ▶ Pre task execution logs
+[2024-10-15, 04:30:54 UTC] {base.py:84} INFO - Retrieving connection '***_mssql'
+[2024-10-15, 04:30:54 UTC] {sql.py:96} INFO - Poking: 
+    SELECT TOP 1 1
+    FROM msdb.dbo.sysjobhistory
+    WHERE job_id = (SELECT job_id FROM msdb.dbo.sysjobs WHERE name = 'SimpleCustomerJob')
+    AND run_date > CONVERT(int, CONVERT(varchar(8), GETDATE(), 112))
+     (with parameters None)
+[2024-10-15, 04:30:54 UTC] {base.py:84} INFO - Retrieving connection '***_mssql'
+[2024-10-15, 04:30:54 UTC] {sql.py:542} INFO - Running statement: 
+    SELECT TOP 1 1
+    FROM msdb.dbo.sysjobhistory
+    WHERE job_id = (SELECT job_id FROM msdb.dbo.sysjobs WHERE name = 'SimpleCustomerJob')
+    AND run_date > CONVERT(int, CONVERT(varchar(8), GETDATE(), 112))
+    , parameters: None
+[2024-10-15, 04:30:54 UTC] {sql.py:551} INFO - Rows affected: 0

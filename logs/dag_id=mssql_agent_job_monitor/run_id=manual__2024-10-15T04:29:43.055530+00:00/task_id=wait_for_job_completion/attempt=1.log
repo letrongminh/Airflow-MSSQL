@@ -1,0 +1,40 @@
+[2024-10-15T04:29:45.530+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-15T04:29:45.554+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: mssql_agent_job_monitor.wait_for_job_completion manual__2024-10-15T04:29:43.055530+00:00 [queued]>
+[2024-10-15T04:29:45.564+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: mssql_agent_job_monitor.wait_for_job_completion manual__2024-10-15T04:29:43.055530+00:00 [queued]>
+[2024-10-15T04:29:45.564+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 2
+[2024-10-15T04:29:45.584+0000] {taskinstance.py:2888} INFO - Executing <Task(SqlSensor): wait_for_job_completion> on 2024-10-15 04:29:43.055530+00:00
+[2024-10-15T04:29:45.595+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=1647) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-10-15T04:29:45.597+0000] {standard_task_runner.py:72} INFO - Started process 1652 to run task
+[2024-10-15T04:29:45.602+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'mssql_agent_job_monitor', 'wait_for_job_completion', 'manual__2024-10-15T04:29:43.055530+00:00', '--job-id', '160', '--raw', '--subdir', 'DAGS_FOLDER/mssql_monitor_agent1.py', '--cfg-path', '/tmp/tmpkn0urvtw']
+[2024-10-15T04:29:45.604+0000] {standard_task_runner.py:105} INFO - Job 160: Subtask wait_for_job_completion
+[2024-10-15T04:29:45.680+0000] {task_command.py:467} INFO - Running <TaskInstance: mssql_agent_job_monitor.wait_for_job_completion manual__2024-10-15T04:29:43.055530+00:00 [running]> on host a4f82a437ff2
+[2024-10-15T04:29:45.867+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='mssql_agent_job_monitor' AIRFLOW_CTX_TASK_ID='wait_for_job_completion' AIRFLOW_CTX_EXECUTION_DATE='2024-10-15T04:29:43.055530+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-15T04:29:43.055530+00:00'
+[2024-10-15T04:29:45.869+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-10-15T04:29:45.870+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-10-15T04:29:45.870+0000] {logging_mixin.py:190} INFO - Current task name:wait_for_job_completion state:running start_date:2024-10-15 04:29:45.555343+00:00
+[2024-10-15T04:29:45.870+0000] {logging_mixin.py:190} INFO - Dag name:mssql_agent_job_monitor and current dag run status:running
+[2024-10-15T04:29:45.871+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-15T04:29:45.883+0000] {base.py:84} INFO - Retrieving connection '***_mssql'
+[2024-10-15T04:29:45.887+0000] {sql.py:96} INFO - Poking: 
+    SELECT TOP 1 1
+    FROM msdb.dbo.sysjobhistory
+    WHERE job_id = (SELECT job_id FROM msdb.dbo.sysjobs WHERE name = 'SimpleCustomerJob')
+    AND run_date > CONVERT(int, CONVERT(varchar(8), GETDATE(), 112))
+     (with parameters None)
+[2024-10-15T04:29:45.898+0000] {base.py:84} INFO - Retrieving connection '***_mssql'
+[2024-10-15T04:29:45.924+0000] {sql.py:542} INFO - Running statement: 
+    SELECT TOP 1 1
+    FROM msdb.dbo.sysjobhistory
+    WHERE job_id = (SELECT job_id FROM msdb.dbo.sysjobs WHERE name = 'SimpleCustomerJob')
+    AND run_date > CONVERT(int, CONVERT(varchar(8), GETDATE(), 112))
+    , parameters: None
+[2024-10-15T04:29:45.935+0000] {sql.py:551} INFO - Rows affected: 0
+[2024-10-15T04:30:36.033+0000] {local_task_job_runner.py:346} WARNING - State of this instance has been externally set to success. Terminating instance.
+[2024-10-15T04:30:36.034+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2024-10-15T04:30:36.037+0000] {process_utils.py:132} INFO - Sending 15 to group 1652. PIDs of all processes in the group: [1652]
+[2024-10-15T04:30:36.037+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 1652
+[2024-10-15T04:30:36.038+0000] {taskinstance.py:3092} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-10-15T04:30:36.070+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-15T04:30:36.091+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=1652, status='terminated', exitcode=0, started='04:29:44') (1652) terminated with exit code 0

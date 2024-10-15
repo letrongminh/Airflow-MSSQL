@@ -397,3 +397,556 @@
 [2024-10-11T04:01:21.306+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:01:21.306+0000] {dag.py:3239} INFO - Sync 1 DAGs
 [2024-10-11T04:01:21.340+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:01:21.340+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
 [2024-10-11T04:01:21.380+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.158 seconds
+[2024-10-11T04:01:51.551+0000] {processor.py:186} INFO - Started process (PID=3846) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:01:51.553+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:01:51.561+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:01:51.560+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:01:51.583+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:01:51.666+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:01:51.665+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:01:51.705+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:01:51.705+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:01:51.748+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.217 seconds
+[2024-10-11T04:02:22.056+0000] {processor.py:186} INFO - Started process (PID=3913) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:02:22.058+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:02:22.064+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:02:22.064+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:02:22.086+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:02:22.144+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:02:22.143+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:02:22.180+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:02:22.180+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:02:22.226+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.187 seconds
+[2024-10-11T04:02:52.313+0000] {processor.py:186} INFO - Started process (PID=3976) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:02:52.316+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:02:52.322+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:02:52.321+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:02:52.343+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:02:52.395+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:02:52.395+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:02:52.432+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:02:52.432+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:02:52.477+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.178 seconds
+[2024-10-11T04:03:22.627+0000] {processor.py:186} INFO - Started process (PID=4043) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:03:22.629+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:03:22.635+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:03:22.634+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:03:22.654+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:03:22.706+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:03:22.706+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:03:22.743+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:03:22.742+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:03:22.778+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.168 seconds
+[2024-10-11T04:03:53.411+0000] {processor.py:186} INFO - Started process (PID=4110) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:03:53.414+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:03:53.422+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:03:53.421+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:03:53.451+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:03:53.502+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:03:53.502+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:03:53.537+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:03:53.536+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:03:53.574+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.176 seconds
+[2024-10-11T04:04:23.883+0000] {processor.py:186} INFO - Started process (PID=4177) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:04:23.886+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:04:23.891+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:04:23.891+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:04:23.910+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:04:23.963+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:04:23.962+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:04:23.998+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:04:23.998+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:04:24.038+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.167 seconds
+[2024-10-11T04:04:54.348+0000] {processor.py:186} INFO - Started process (PID=4244) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:04:54.350+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:04:54.358+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:04:54.357+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:04:54.381+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:04:54.437+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:04:54.437+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:04:54.474+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:04:54.473+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:04:54.514+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.183 seconds
+[2024-10-11T04:05:24.930+0000] {processor.py:186} INFO - Started process (PID=4310) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:05:24.932+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:05:24.935+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:05:24.935+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:05:24.948+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:05:24.979+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:05:24.979+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:05:24.999+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:05:24.999+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:05:25.023+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.101 seconds
+[2024-10-11T04:05:55.310+0000] {processor.py:186} INFO - Started process (PID=4377) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:05:55.311+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:05:55.314+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:05:55.314+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:05:55.325+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:05:55.351+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:05:55.351+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:05:55.369+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:05:55.369+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:05:55.389+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.086 seconds
+[2024-10-11T04:06:25.436+0000] {processor.py:186} INFO - Started process (PID=4444) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:06:25.437+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:06:25.440+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:06:25.440+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:06:25.451+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:06:25.483+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:06:25.482+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:06:25.502+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:06:25.502+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:06:25.524+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.096 seconds
+[2024-10-11T04:06:55.583+0000] {processor.py:186} INFO - Started process (PID=4511) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:06:55.584+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:06:55.588+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:06:55.587+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:06:55.601+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:06:55.636+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:06:55.636+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:06:55.664+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:06:55.663+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:06:55.694+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.120 seconds
+[2024-10-11T04:07:25.798+0000] {processor.py:186} INFO - Started process (PID=4577) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:07:25.805+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:07:25.809+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:07:25.807+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:07:25.822+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:07:25.852+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:07:25.852+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:07:25.871+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:07:25.871+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:07:25.891+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.102 seconds
+[2024-10-11T04:07:55.958+0000] {processor.py:186} INFO - Started process (PID=4643) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:07:55.960+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:07:55.964+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:07:55.963+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:07:55.977+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:07:56.011+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:07:56.011+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:07:56.033+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:07:56.033+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:07:56.059+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.110 seconds
+[2024-10-11T04:08:26.772+0000] {processor.py:186} INFO - Started process (PID=4710) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:08:26.773+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:08:26.776+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:08:26.775+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:08:26.786+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:08:26.812+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:08:26.811+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:08:26.829+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:08:26.829+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:08:26.848+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.083 seconds
+[2024-10-11T04:08:57.711+0000] {processor.py:186} INFO - Started process (PID=4776) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:08:57.713+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:08:57.716+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:08:57.716+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:08:57.729+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:08:57.756+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:08:57.756+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:08:57.773+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:08:57.773+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:08:57.792+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.090 seconds
+[2024-10-11T04:09:28.577+0000] {processor.py:186} INFO - Started process (PID=4843) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:09:28.578+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:09:28.582+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:09:28.581+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:09:28.593+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:09:28.619+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:09:28.619+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:09:28.638+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:09:28.638+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:09:28.657+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.089 seconds
+[2024-10-11T04:09:58.833+0000] {processor.py:186} INFO - Started process (PID=4910) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:09:58.834+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:09:58.837+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:09:58.837+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:09:58.848+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:09:58.874+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:09:58.874+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:09:58.892+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:09:58.891+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:09:58.914+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.088 seconds
+[2024-10-11T04:10:29.212+0000] {processor.py:186} INFO - Started process (PID=4976) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:10:29.214+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:10:29.217+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:10:29.216+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:10:29.229+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:10:29.262+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:10:29.262+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:10:29.282+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:10:29.282+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:10:29.311+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.107 seconds
+[2024-10-11T04:10:59.655+0000] {processor.py:186} INFO - Started process (PID=5043) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:10:59.657+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:10:59.661+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:10:59.660+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:10:59.674+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:10:59.715+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:10:59.715+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:10:59.735+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:10:59.734+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:10:59.758+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.113 seconds
+[2024-10-11T04:11:29.926+0000] {processor.py:186} INFO - Started process (PID=5110) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:11:29.929+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:11:29.939+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:11:29.939+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:11:29.956+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:11:30.014+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:11:30.014+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:11:30.048+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:11:30.044+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:11:30.084+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.174 seconds
+[2024-10-11T04:12:00.389+0000] {processor.py:186} INFO - Started process (PID=5176) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:12:00.392+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:12:00.399+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:12:00.398+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:12:00.419+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:12:00.464+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:12:00.464+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:12:00.494+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:12:00.494+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:12:00.522+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.148 seconds
+[2024-10-11T04:12:30.684+0000] {processor.py:186} INFO - Started process (PID=5244) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:12:30.687+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:12:30.746+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:12:30.744+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:12:30.781+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:12:30.863+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:12:30.863+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:12:30.905+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:12:30.904+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:12:30.945+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.276 seconds
+[2024-10-11T04:13:01.055+0000] {processor.py:186} INFO - Started process (PID=5315) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:13:01.060+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:13:01.070+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:13:01.069+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:13:01.117+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:13:01.208+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:13:01.207+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:13:01.265+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:13:01.264+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:13:01.315+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.278 seconds
+[2024-10-11T04:13:32.203+0000] {processor.py:186} INFO - Started process (PID=5381) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:13:32.205+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:13:32.211+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:13:32.210+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:13:32.227+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:13:32.269+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:13:32.269+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:13:32.322+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:13:32.321+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:13:32.372+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.192 seconds
+[2024-10-11T04:14:02.529+0000] {processor.py:186} INFO - Started process (PID=5447) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:14:02.530+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:14:02.535+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:14:02.534+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:14:02.557+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:14:02.623+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:14:02.622+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:14:02.657+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:14:02.657+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:14:02.698+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.183 seconds
+[2024-10-11T04:14:32.926+0000] {processor.py:186} INFO - Started process (PID=5514) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:14:32.928+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:14:32.933+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:14:32.932+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:14:32.951+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:14:33.002+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:14:33.002+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:14:33.033+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:14:33.033+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:14:33.073+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.160 seconds
+[2024-10-11T04:15:03.583+0000] {processor.py:186} INFO - Started process (PID=5581) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:15:03.586+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:15:03.594+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:15:03.593+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:15:03.613+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:15:03.705+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:15:03.704+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:15:03.766+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:15:03.765+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:15:03.831+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.284 seconds
+[2024-10-11T04:15:33.926+0000] {processor.py:186} INFO - Started process (PID=5648) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:15:33.928+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:15:33.936+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:15:33.936+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:15:33.959+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:15:34.044+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:15:34.043+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:15:34.087+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:15:34.086+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:15:34.133+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.223 seconds
+[2024-10-11T04:16:04.885+0000] {processor.py:186} INFO - Started process (PID=5715) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:16:04.888+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:16:04.894+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:16:04.893+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:16:04.913+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:16:04.966+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:16:04.965+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:16:04.995+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:16:04.995+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:16:05.025+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.154 seconds
+[2024-10-11T04:16:35.650+0000] {processor.py:186} INFO - Started process (PID=5781) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:16:35.652+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:16:35.656+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:16:35.656+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:16:35.674+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:16:35.717+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:16:35.716+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:16:35.745+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:16:35.744+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:16:35.784+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.146 seconds
+[2024-10-11T04:17:06.262+0000] {processor.py:186} INFO - Started process (PID=5848) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:17:06.264+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:17:06.269+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:17:06.268+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:17:06.294+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:17:06.380+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:17:06.379+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:17:06.422+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:17:06.421+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:17:06.470+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.222 seconds
+[2024-10-11T04:17:36.964+0000] {processor.py:186} INFO - Started process (PID=5921) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:17:36.966+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:17:36.978+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:17:36.977+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:17:37.013+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:17:37.090+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:17:37.090+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:17:37.128+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:17:37.128+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:17:37.175+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.235 seconds
+[2024-10-11T04:18:07.853+0000] {processor.py:186} INFO - Started process (PID=5987) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:18:07.855+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:18:07.862+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:18:07.861+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:18:07.901+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:18:07.960+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:18:07.960+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:18:07.995+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:18:07.995+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:18:08.030+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.191 seconds
+[2024-10-11T04:18:38.556+0000] {processor.py:186} INFO - Started process (PID=6054) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:18:38.573+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:18:38.592+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:18:38.591+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:18:38.659+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:18:38.751+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:18:38.750+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:18:38.815+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:18:38.815+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:18:38.880+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.367 seconds
+[2024-10-11T04:19:09.086+0000] {processor.py:186} INFO - Started process (PID=6120) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:19:09.088+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:19:09.096+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:19:09.096+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:19:09.116+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:19:09.197+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:19:09.196+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:19:09.254+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:19:09.253+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:19:09.306+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.234 seconds
+[2024-10-11T04:19:39.730+0000] {processor.py:186} INFO - Started process (PID=6187) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:19:39.733+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:19:39.738+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:19:39.737+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:19:39.757+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:19:39.815+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:19:39.814+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:19:39.846+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:19:39.845+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:19:39.889+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.177 seconds
+[2024-10-11T04:20:10.257+0000] {processor.py:186} INFO - Started process (PID=6254) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:20:10.259+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:20:10.265+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:20:10.264+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:20:10.285+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:20:10.344+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:20:10.344+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:20:10.380+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:20:10.380+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:20:10.418+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.175 seconds
+[2024-10-11T04:20:40.770+0000] {processor.py:186} INFO - Started process (PID=6320) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:20:40.772+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:20:40.778+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:20:40.778+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:20:40.800+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:20:40.845+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:20:40.845+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:20:40.875+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:20:40.874+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:20:40.909+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.152 seconds
+[2024-10-11T04:21:36.756+0000] {processor.py:186} INFO - Started process (PID=6364) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:21:36.764+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:21:36.780+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:21:36.779+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:21:36.821+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:21:36.931+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:21:36.930+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:21:36.986+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:21:36.985+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:21:37.101+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.374 seconds
+[2024-10-11T04:22:08.449+0000] {processor.py:186} INFO - Started process (PID=6436) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:22:08.450+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:22:08.459+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:22:08.458+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:22:08.486+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:22:08.551+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:22:08.550+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:22:08.614+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:22:08.614+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:22:08.692+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.265 seconds
+[2024-10-11T04:22:38.998+0000] {processor.py:186} INFO - Started process (PID=6503) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:22:39.000+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:22:39.007+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:22:39.006+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:22:39.026+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:22:39.089+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:22:39.089+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:22:39.145+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:22:39.145+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:22:39.234+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.249 seconds
+[2024-10-11T04:23:10.031+0000] {processor.py:186} INFO - Started process (PID=6569) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:23:10.033+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:23:10.039+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:23:10.038+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:23:10.061+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:23:10.118+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:23:10.118+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:23:10.157+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:23:10.156+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:23:10.199+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.183 seconds
+[2024-10-11T04:23:40.731+0000] {processor.py:186} INFO - Started process (PID=6636) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:23:40.733+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:23:40.739+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:23:40.738+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:23:40.757+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:23:40.830+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:23:40.829+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:23:40.881+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:23:40.880+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:23:40.933+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.218 seconds
+[2024-10-11T04:24:11.361+0000] {processor.py:186} INFO - Started process (PID=6703) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:24:11.365+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:24:11.372+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:24:11.371+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:24:11.393+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:24:11.453+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:24:11.452+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:24:11.489+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:24:11.489+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:24:11.531+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.184 seconds
+[2024-10-11T04:24:41.726+0000] {processor.py:186} INFO - Started process (PID=6770) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:24:41.728+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:24:41.733+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:24:41.732+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:24:41.757+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:24:41.811+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:24:41.811+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:24:41.846+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:24:41.846+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:24:41.900+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.187 seconds
+[2024-10-11T04:25:12.208+0000] {processor.py:186} INFO - Started process (PID=6834) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:25:12.210+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:25:12.215+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:25:12.214+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:25:12.236+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:25:12.292+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:25:12.291+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:25:12.326+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:25:12.326+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:25:12.371+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.177 seconds
+[2024-10-11T04:25:42.487+0000] {processor.py:186} INFO - Started process (PID=6901) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:25:42.489+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:25:42.494+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:25:42.494+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:25:42.516+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:25:42.566+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:25:42.565+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:25:42.606+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:25:42.605+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:25:42.650+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.176 seconds
+[2024-10-11T04:26:13.375+0000] {processor.py:186} INFO - Started process (PID=6968) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:26:13.377+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:26:13.382+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:26:13.381+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:26:13.403+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:26:13.460+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:26:13.459+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:26:13.492+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:26:13.492+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:26:13.536+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.176 seconds
+[2024-10-11T04:26:44.506+0000] {processor.py:186} INFO - Started process (PID=7035) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:26:44.511+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:26:44.526+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:26:44.520+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:26:44.561+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:26:44.637+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:26:44.636+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:26:44.678+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:26:44.678+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:26:44.747+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.269 seconds
+[2024-10-11T04:27:15.742+0000] {processor.py:186} INFO - Started process (PID=7102) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:27:15.744+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:27:15.749+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:27:15.748+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:27:15.772+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:27:15.831+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:27:15.830+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:27:15.862+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:27:15.862+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:27:15.899+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.174 seconds
+[2024-10-11T04:27:46.844+0000] {processor.py:186} INFO - Started process (PID=7169) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:27:46.846+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T04:27:46.850+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:27:46.850+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:27:46.867+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T04:27:46.905+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:27:46.904+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T04:27:46.935+0000] {logging_mixin.py:190} INFO - [2024-10-11T04:27:46.935+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T04:27:46.978+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.146 seconds
+[2024-10-11T08:13:00.139+0000] {processor.py:186} INFO - Started process (PID=7236) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:13:00.146+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T08:13:00.197+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:13:00.188+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:13:00.266+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:13:00.427+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:13:00.427+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T08:13:00.620+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:13:00.620+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T08:13:00.687+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.595 seconds
+[2024-10-11T08:13:31.694+0000] {processor.py:186} INFO - Started process (PID=7303) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:13:31.695+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T08:13:31.701+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:13:31.700+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:13:31.718+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:13:31.762+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:13:31.762+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T08:13:31.793+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:13:31.793+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T08:13:31.825+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.143 seconds
+[2024-10-11T08:14:02.755+0000] {processor.py:186} INFO - Started process (PID=7370) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:14:02.756+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T08:14:02.761+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:14:02.761+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:14:02.779+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:14:02.824+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:14:02.823+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T08:14:02.851+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:14:02.851+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T08:14:02.880+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.138 seconds
+[2024-10-11T08:14:33.016+0000] {processor.py:186} INFO - Started process (PID=7437) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:14:33.018+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T08:14:33.023+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:14:33.023+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:14:33.047+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:14:33.099+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:14:33.099+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T08:14:33.127+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:14:33.127+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T08:14:33.161+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.160 seconds
+[2024-10-11T08:15:03.451+0000] {processor.py:186} INFO - Started process (PID=7504) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:15:03.453+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T08:15:03.458+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:15:03.458+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:15:03.473+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:15:03.511+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:15:03.511+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T08:15:03.540+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:15:03.539+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T08:15:03.567+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.127 seconds
+[2024-10-11T08:15:34.122+0000] {processor.py:186} INFO - Started process (PID=7571) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:15:34.123+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T08:15:34.130+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:15:34.130+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:15:34.149+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:15:34.194+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:15:34.194+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T08:15:34.223+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:15:34.223+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T08:15:34.254+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.142 seconds
+[2024-10-11T08:16:04.594+0000] {processor.py:186} INFO - Started process (PID=7638) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:16:04.595+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T08:16:04.600+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:16:04.600+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:16:04.618+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:16:04.666+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:16:04.666+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T08:16:04.695+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:16:04.695+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T08:16:04.731+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.148 seconds
+[2024-10-11T08:16:34.970+0000] {processor.py:186} INFO - Started process (PID=7704) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:16:34.972+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T08:16:34.978+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:16:34.977+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:16:34.997+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:16:35.037+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:16:35.036+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T08:16:35.063+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:16:35.063+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T08:16:35.093+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.136 seconds
+[2024-10-11T08:17:05.221+0000] {processor.py:186} INFO - Started process (PID=7771) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:17:05.223+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T08:17:05.227+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:17:05.227+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:17:05.244+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:17:05.283+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:17:05.282+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T08:17:05.321+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:17:05.320+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T08:17:05.348+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.139 seconds
+[2024-10-11T08:17:35.518+0000] {processor.py:186} INFO - Started process (PID=7837) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:17:35.519+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T08:17:35.524+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:17:35.523+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:17:35.541+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:17:35.594+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:17:35.594+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T08:17:35.622+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:17:35.622+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T08:17:35.653+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.148 seconds
+[2024-10-11T08:18:06.154+0000] {processor.py:186} INFO - Started process (PID=7904) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:18:06.155+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T08:18:06.162+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:18:06.162+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:18:06.177+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:18:06.220+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:18:06.219+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T08:18:06.248+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:18:06.248+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T08:18:06.279+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.137 seconds
+[2024-10-11T08:18:36.852+0000] {processor.py:186} INFO - Started process (PID=7970) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:18:36.857+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T08:18:36.864+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:18:36.863+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:18:36.883+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:18:36.936+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:18:36.935+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T08:18:36.969+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:18:36.968+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T08:18:36.998+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.160 seconds
+[2024-10-11T08:19:07.294+0000] {processor.py:186} INFO - Started process (PID=8037) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:19:07.295+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T08:19:07.302+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:19:07.301+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:19:07.325+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:19:07.374+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:19:07.373+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T08:19:07.405+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:19:07.404+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T08:19:07.445+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.165 seconds
+[2024-10-11T08:19:37.807+0000] {processor.py:186} INFO - Started process (PID=8104) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:19:37.809+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T08:19:37.814+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:19:37.813+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:19:37.836+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:19:37.892+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:19:37.892+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T08:19:37.924+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:19:37.923+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T08:19:37.965+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.173 seconds
+[2024-10-11T08:20:08.545+0000] {processor.py:186} INFO - Started process (PID=8171) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:20:08.548+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T08:20:08.553+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:20:08.552+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:20:08.572+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:20:08.631+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:20:08.631+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T08:20:08.662+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:20:08.661+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T08:20:08.698+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.166 seconds
+[2024-10-11T08:20:39.326+0000] {processor.py:186} INFO - Started process (PID=8238) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:20:39.328+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T08:20:39.333+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:20:39.332+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:20:39.349+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:20:39.387+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:20:39.386+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T08:20:39.414+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:20:39.414+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T08:20:39.447+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.135 seconds
+[2024-10-11T08:21:09.667+0000] {processor.py:186} INFO - Started process (PID=8305) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:21:09.669+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T08:21:09.676+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:21:09.675+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:21:09.697+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:21:09.748+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:21:09.747+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T08:21:09.780+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:21:09.779+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T08:21:09.809+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.157 seconds
+[2024-10-11T08:21:39.951+0000] {processor.py:186} INFO - Started process (PID=8372) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:21:39.954+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T08:21:39.960+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:21:39.960+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:21:39.982+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:21:40.030+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:21:40.030+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T08:21:40.062+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:21:40.061+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T08:21:40.095+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.156 seconds
+[2024-10-11T08:22:10.440+0000] {processor.py:186} INFO - Started process (PID=8439) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:22:10.442+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T08:22:10.447+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:22:10.447+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:22:10.464+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:22:10.514+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:22:10.514+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T08:22:10.548+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:22:10.547+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T08:22:10.577+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.149 seconds
+[2024-10-11T08:22:41.356+0000] {processor.py:186} INFO - Started process (PID=8506) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:22:41.359+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T08:22:41.363+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:22:41.363+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:22:41.383+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:22:41.427+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:22:41.426+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T08:22:41.455+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:22:41.455+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T08:22:41.489+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.146 seconds
+[2024-10-11T08:23:11.972+0000] {processor.py:186} INFO - Started process (PID=8573) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:23:11.973+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T08:23:11.977+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:23:11.977+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:23:11.994+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:23:12.037+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:23:12.036+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T08:23:12.068+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:23:12.067+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T08:23:12.098+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.138 seconds
+[2024-10-11T08:23:42.258+0000] {processor.py:186} INFO - Started process (PID=8640) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:23:42.261+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T08:23:42.272+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:23:42.271+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:23:42.289+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:23:42.334+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:23:42.334+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T08:23:42.361+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:23:42.360+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T08:23:42.399+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.169 seconds
+[2024-10-11T08:24:12.748+0000] {processor.py:186} INFO - Started process (PID=8707) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:24:12.750+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T08:24:12.755+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:24:12.754+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:24:12.771+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:24:12.818+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:24:12.817+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T08:24:12.847+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:24:12.846+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T08:24:12.876+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.140 seconds
+[2024-10-11T08:24:43.468+0000] {processor.py:186} INFO - Started process (PID=8774) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:24:43.469+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T08:24:43.475+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:24:43.474+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:24:43.492+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:24:43.535+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:24:43.534+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T08:24:43.586+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:24:43.586+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T08:24:43.642+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.187 seconds
+[2024-10-11T08:25:14.043+0000] {processor.py:186} INFO - Started process (PID=8841) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:25:14.045+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T08:25:14.054+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:25:14.052+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:25:14.084+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:25:14.143+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:25:14.142+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T08:25:14.180+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:25:14.180+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T08:25:14.232+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.200 seconds
+[2024-10-11T08:25:49.728+0000] {processor.py:186} INFO - Started process (PID=8908) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:25:49.730+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T08:25:49.735+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:25:49.734+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:25:49.753+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:25:49.805+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:25:49.804+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T08:25:49.837+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:25:49.837+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T08:25:50.223+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.510 seconds
+[2024-10-11T08:26:20.310+0000] {processor.py:186} INFO - Started process (PID=8976) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:26:20.311+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T08:26:20.316+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:26:20.315+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:26:20.333+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:26:20.379+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:26:20.379+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T08:26:20.408+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:26:20.407+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T08:26:20.442+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.144 seconds
+[2024-10-11T08:26:50.894+0000] {processor.py:186} INFO - Started process (PID=9043) to work on /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:26:50.896+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_test2.py for tasks to queue
+[2024-10-11T08:26:50.901+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:26:50.901+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:26:50.917+0000] {processor.py:925} INFO - DAG(s) 'mssql_test2' retrieved from /opt/airflow/dags/mssql_test2.py
+[2024-10-11T08:26:50.967+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:26:50.966+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-11T08:26:50.993+0000] {logging_mixin.py:190} INFO - [2024-10-11T08:26:50.992+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_test2 to None, run_after=None
+[2024-10-11T08:26:51.041+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_test2.py took 0.158 seconds
