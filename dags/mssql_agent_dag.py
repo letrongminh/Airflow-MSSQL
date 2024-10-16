@@ -1,76 +1,3 @@
-'''
-# from airflow import DAG
-# from airflow.operators.python_operator import PythonOperator
-# from datetime import datetime, timedelta
-# import pymssql
-
-# default_args = {
-#     'owner': 'airflow',
-#     'depends_on_past': False,
-#     'start_date': datetime(2024, 10, 10),
-#     'email': ['your@email.com'],
-#     'email_on_failure': False,
-#     'email_on_retry': False,
-#     'retries': 1,
-#     'retry_delay': timedelta(minutes=5)
-# }
-
-# dag = DAG(
-#     'mssql_agent_dag',
-#     default_args=default_args,
-#     description='Execute SQL Server Agent jobs with Airflow',
-#     schedule_interval='@once',
-#     tags=['minhlt9'],
-# )
-
-# # Define the SQL Server connection details
-# sql_server_conn = {
-#     'server': 'mssqlserver',
-#     'user': 'sa',
-#     'password': 'pw_123123',
-#     'database': 'NVDB'
-# }
-
-# def execute_sql_agent_job(job_name):
-#     conn = pymssql.connect(
-#         server=sql_server_conn['server'],
-#         user=sql_server_conn['user'],
-#         password=sql_server_conn['password'],
-#         database=sql_server_conn['database']
-#     )
-#     cursor = conn.cursor()
-
-#     # Start the SQL Server Agent job
-#     cursor.callproc('msdb.dbo.sp_start_job', (job_name,))
-#     conn.commit()
-
-#     # Check the status of each step
-#     query = f"SELECT step_id, step_name, current_execution_status FROM msdb.dbo.sysjobsteps WHERE job_id IN (SELECT job_id FROM msdb.dbo.sysjobs WHERE name = '{job_name}')"
-#     cursor.execute(query)
-#     steps_status = cursor.fetchall()
-
-#     for step in steps_status:
-#         step_id, step_name, current_execution_status = step
-#         # Your logic to check the status of each step
-#         if current_execution_status == 1:  # Success
-#             print(f"Step {step_id}: {step_name} executed successfully.")
-#         else:
-#             print(f"Step {step_id}: {step_name} execution failed.")
-
-#     cursor.close()
-#     conn.close()
-
-# t1 = PythonOperator(
-#     task_id='execute_sql_agent_job',
-#     python_callable=execute_sql_agent_job,
-#     op_kwargs={'job_name': 'YourAgentJobName'},
-#     dag=dag,
-# )
-
-# t1
-'''
-
-
 from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
 from datetime import datetime, timedelta
@@ -215,7 +142,7 @@ def execute_sql_agent_job(job_name):
     conn.commit()
     print(f"Job {job_name} started successfully.")
 
-    # Kiểm tra trạng thái của từng bước trong job
+    # Kiểm tra trạng thái của job
     job_id_query = f"SELECT job_id FROM msdb.dbo.sysjobs WHERE name = '{job_name}'"
     cursor.execute(job_id_query)
     job_id = cursor.fetchone()[0]
@@ -223,37 +150,38 @@ def execute_sql_agent_job(job_name):
     # Dùng vòng lặp để kiểm tra trạng thái cho đến khi job hoàn thành
     job_completed = False
     while not job_completed:
-        # Query status of each step in the job from sysjobhistory and sysjobsteps
+        # Query status of the job from sysjobactivity
         job_status_query = f"""
-        SELECT ja.run_status, 
-               js.step_id, 
-               js.step_name 
-        FROM msdb.dbo.sysjobhistory ja
-        INNER JOIN msdb.dbo.sysjobs j ON ja.job_id = j.job_id
-        INNER JOIN msdb.dbo.sysjobsteps js ON ja.job_id = js.job_id AND ja.step_id = js.step_id
-        WHERE ja.job_id = '{job_id}' AND ja.step_id > 0
-        ORDER BY ja.run_date DESC, ja.run_time DESC
+        SELECT 
+            ja.run_requested_date,
+            ISNULL(ja.stop_execution_date, GETDATE()) AS stop_execution_date,
+            DATEDIFF(SECOND, ja.run_requested_date, ISNULL(ja.stop_execution_date, GETDATE())) AS duration,
+            CASE 
+                WHEN ja.stop_execution_date IS NULL THEN 'Running'
+                WHEN h.run_status = 1 THEN 'Succeeded'
+                WHEN h.run_status = 0 THEN 'Failed'
+                ELSE 'Unknown'
+            END AS job_status
+        FROM msdb.dbo.sysjobactivity ja
+        LEFT JOIN msdb.dbo.sysjobhistory h ON ja.job_id = h.job_id AND ja.job_history_id = h.instance_id
+        WHERE ja.job_id = '{job_id}' AND ja.start_execution_date IS NOT NULL
         """
         cursor.execute(job_status_query)
-        step_status = cursor.fetchall()
+        job_status = cursor.fetchone()
 
-        # Duyệt qua các step để in ra trạng thái
-        for step in step_status:
-            run_status, step_id, step_name = step
-            if run_status == 1:  # Thành công
-                print(f"Step {step_id}: {step_name} executed successfully.")
-            elif run_status == 0:  # Thất bại
-                print(f"Step {step_id}: {step_name} execution failed.")
-            else:
-                print(f"Step {step_id}: {step_name} is still running.")
+        if job_status:
+            run_requested_date, stop_execution_date, duration, status = job_status
+            print(f"Job status: {status}, Duration: {duration} seconds")
 
-        # Kiểm tra nếu job đã hoàn thành hoặc tất cả các bước đã được thực hiện
-        if all(status[0] in (0, 1) for status in step_status):
-            job_completed = True
+            if status in ('Succeeded', 'Failed'):
+                job_completed = True
         else:
+            print("Job status: Running")
+
+        if not job_completed:
             time.sleep(5)  # Chờ 5 giây trước khi kiểm tra lại
 
-    print(f"Job {job_name} completed successfully.")
+    print(f"Job {job_name} completed with status: {status}")
 
     cursor.close()
     conn.close()

@@ -1,0 +1,67 @@
+[2024-10-16T03:11:25.359+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-16T03:11:25.382+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: mssql_agent_dag.execute_sql_agent_job manual__2024-10-16T03:11:16.953364+00:00 [queued]>
+[2024-10-16T03:11:25.394+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: mssql_agent_dag.execute_sql_agent_job manual__2024-10-16T03:11:16.953364+00:00 [queued]>
+[2024-10-16T03:11:25.395+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2024-10-16T03:11:25.414+0000] {taskinstance.py:2888} INFO - Executing <Task(PythonOperator): execute_sql_agent_job> on 2024-10-16 03:11:16.953364+00:00
+[2024-10-16T03:11:25.422+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=1058) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-10-16T03:11:25.424+0000] {standard_task_runner.py:72} INFO - Started process 1060 to run task
+[2024-10-16T03:11:25.426+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'mssql_agent_dag', 'execute_sql_agent_job', 'manual__2024-10-16T03:11:16.953364+00:00', '--job-id', '202', '--raw', '--subdir', 'DAGS_FOLDER/mssql_agent_dag.py', '--cfg-path', '/tmp/tmpc5pz0b8y']
+[2024-10-16T03:11:25.428+0000] {standard_task_runner.py:105} INFO - Job 202: Subtask execute_sql_agent_job
+[2024-10-16T03:11:25.501+0000] {task_command.py:467} INFO - Running <TaskInstance: mssql_agent_dag.execute_sql_agent_job manual__2024-10-16T03:11:16.953364+00:00 [running]> on host a4f82a437ff2
+[2024-10-16T03:11:25.650+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_EMAIL='your@email.com' AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='mssql_agent_dag' AIRFLOW_CTX_TASK_ID='execute_sql_agent_job' AIRFLOW_CTX_EXECUTION_DATE='2024-10-16T03:11:16.953364+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-10-16T03:11:16.953364+00:00'
+[2024-10-16T03:11:25.654+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-10-16T03:11:25.655+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-10-16T03:11:25.655+0000] {logging_mixin.py:190} INFO - Current task name:execute_sql_agent_job state:running start_date:2024-10-16 03:11:25.383488+00:00
+[2024-10-16T03:11:25.656+0000] {logging_mixin.py:190} INFO - Dag name:mssql_agent_dag and current dag run status:running
+[2024-10-16T03:11:25.656+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-16T03:11:25.681+0000] {logging_mixin.py:190} INFO - Job SimpleCustomerJob started successfully.
+[2024-10-16T03:11:25.695+0000] {logging_mixin.py:190} INFO - Job status: Running
+[2024-10-16T03:11:30.696+0000] {logging_mixin.py:190} INFO - Job status: Running, Duration: 5 seconds
+[2024-10-16T03:11:35.698+0000] {logging_mixin.py:190} INFO - Job status: Running, Duration: 10 seconds
+[2024-10-16T03:11:40.701+0000] {logging_mixin.py:190} INFO - Job status: Running, Duration: 15 seconds
+[2024-10-16T03:11:45.704+0000] {logging_mixin.py:190} INFO - Job status: Running, Duration: 20 seconds
+[2024-10-16T03:11:50.707+0000] {logging_mixin.py:190} INFO - Job status: Running, Duration: 25 seconds
+[2024-10-16T03:11:55.710+0000] {logging_mixin.py:190} INFO - Job status: Running, Duration: 30 seconds
+[2024-10-16T03:12:00.712+0000] {logging_mixin.py:190} INFO - Job status: Running, Duration: 35 seconds
+[2024-10-16T03:12:05.713+0000] {logging_mixin.py:190} INFO - Job status: Running, Duration: 40 seconds
+[2024-10-16T03:12:10.717+0000] {logging_mixin.py:190} INFO - Job status: Running, Duration: 45 seconds
+[2024-10-16T03:12:15.720+0000] {logging_mixin.py:190} INFO - Job status: Running, Duration: 50 seconds
+[2024-10-16T03:12:20.722+0000] {logging_mixin.py:190} INFO - Job status: Running, Duration: 55 seconds
+[2024-10-16T03:12:25.725+0000] {logging_mixin.py:190} INFO - Job status: Running, Duration: 60 seconds
+[2024-10-16T03:12:30.730+0000] {logging_mixin.py:190} INFO - Job status: Running, Duration: 65 seconds
+[2024-10-16T03:12:35.732+0000] {logging_mixin.py:190} INFO - Job status: Running, Duration: 70 seconds
+[2024-10-16T03:12:40.735+0000] {logging_mixin.py:190} INFO - Job status: Running, Duration: 75 seconds
+[2024-10-16T03:12:45.740+0000] {logging_mixin.py:190} INFO - Job status: Running, Duration: 80 seconds
+[2024-10-16T03:12:50.743+0000] {logging_mixin.py:190} INFO - Job status: Running, Duration: 85 seconds
+[2024-10-16T03:12:55.746+0000] {logging_mixin.py:190} INFO - Job status: Running, Duration: 90 seconds
+[2024-10-16T03:13:00.748+0000] {logging_mixin.py:190} INFO - Job status: Running, Duration: 95 seconds
+[2024-10-16T03:13:05.752+0000] {logging_mixin.py:190} INFO - Job status: Running, Duration: 100 seconds
+[2024-10-16T03:13:10.754+0000] {logging_mixin.py:190} INFO - Job status: Running, Duration: 105 seconds
+[2024-10-16T03:13:15.756+0000] {logging_mixin.py:190} INFO - Job status: Running, Duration: 110 seconds
+[2024-10-16T03:13:20.758+0000] {logging_mixin.py:190} INFO - Job status: Running, Duration: 115 seconds
+[2024-10-16T03:13:25.760+0000] {logging_mixin.py:190} INFO - Job status: Running, Duration: 120 seconds
+[2024-10-16T03:13:30.765+0000] {logging_mixin.py:190} INFO - Job status: Running, Duration: 125 seconds
+[2024-10-16T03:13:35.768+0000] {logging_mixin.py:190} INFO - Job status: Running, Duration: 130 seconds
+[2024-10-16T03:13:40.771+0000] {logging_mixin.py:190} INFO - Job status: Running, Duration: 135 seconds
+[2024-10-16T03:13:45.774+0000] {logging_mixin.py:190} INFO - Job status: Running, Duration: 140 seconds
+[2024-10-16T03:13:50.791+0000] {logging_mixin.py:190} INFO - Job status: Running, Duration: 145 seconds
+[2024-10-16T03:13:55.792+0000] {logging_mixin.py:190} INFO - Job status: Running, Duration: 150 seconds
+[2024-10-16T03:14:00.794+0000] {logging_mixin.py:190} INFO - Job status: Running, Duration: 155 seconds
+[2024-10-16T03:14:05.796+0000] {logging_mixin.py:190} INFO - Job status: Running, Duration: 160 seconds
+[2024-10-16T03:14:10.799+0000] {logging_mixin.py:190} INFO - Job status: Running, Duration: 165 seconds
+[2024-10-16T03:14:15.801+0000] {logging_mixin.py:190} INFO - Job status: Running, Duration: 170 seconds
+[2024-10-16T03:14:20.803+0000] {logging_mixin.py:190} INFO - Job status: Running, Duration: 175 seconds
+[2024-10-16T03:14:25.806+0000] {logging_mixin.py:190} INFO - Job status: Succeeded, Duration: 179 seconds
+[2024-10-16T03:14:25.806+0000] {logging_mixin.py:190} INFO - Job SimpleCustomerJob completed with status: Succeeded
+[2024-10-16T03:14:25.807+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-10-16T03:14:25.823+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-16T03:14:25.824+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=mssql_agent_dag, task_id=execute_sql_agent_job, run_id=manual__2024-10-16T03:11:16.953364+00:00, execution_date=20241016T031116, start_date=20241016T031125, end_date=20241016T031425
+[2024-10-16T03:14:25.839+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-10-16T03:14:25.840+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-10-16T03:14:25.843+0000] {logging_mixin.py:190} INFO - Dag name:mssql_agent_dag queued_at:2024-10-16 03:11:16.971860+00:00
+[2024-10-16T03:14:25.843+0000] {logging_mixin.py:190} INFO - Task hostname:a4f82a437ff2 operator:PythonOperator
+[2024-10-16T03:14:25.886+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-10-16T03:14:25.909+0000] {taskinstance.py:3900} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-10-16T03:14:25.910+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
