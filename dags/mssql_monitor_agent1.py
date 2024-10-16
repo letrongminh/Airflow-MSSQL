@@ -94,5 +94,5 @@ failure_task = PythonOperator(
     dag=dag
 )
 
-# job_sensor >> check_status >> [success_task, failure_task]
-check_status >> [success_task, failure_task]
+job_sensor >> check_status >> [success_task, failure_task]
+# check_status >> [success_task, failure_task]

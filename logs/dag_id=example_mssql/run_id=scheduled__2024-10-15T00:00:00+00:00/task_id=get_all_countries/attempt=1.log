@@ -1,0 +1,31 @@
+[2024-10-16T02:02:19.553+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-10-16T02:02:19.572+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: example_mssql.get_all_countries scheduled__2024-10-15T00:00:00+00:00 [queued]>
+[2024-10-16T02:02:19.581+0000] {taskinstance.py:2612} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: example_mssql.get_all_countries scheduled__2024-10-15T00:00:00+00:00 [queued]>
+[2024-10-16T02:02:19.581+0000] {taskinstance.py:2865} INFO - Starting attempt 1 of 1
+[2024-10-16T02:02:19.595+0000] {taskinstance.py:2888} INFO - Executing <Task(SQLExecuteQueryOperator): get_all_countries> on 2024-10-15 00:00:00+00:00
+[2024-10-16T02:02:19.605+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=139) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-10-16T02:02:19.606+0000] {standard_task_runner.py:72} INFO - Started process 141 to run task
+[2024-10-16T02:02:19.607+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'example_mssql', 'get_all_countries', 'scheduled__2024-10-15T00:00:00+00:00', '--job-id', '188', '--raw', '--subdir', 'DAGS_FOLDER/mssql_test1.py', '--cfg-path', '/tmp/tmprc8jsx6t']
+[2024-10-16T02:02:19.609+0000] {standard_task_runner.py:105} INFO - Job 188: Subtask get_all_countries
+[2024-10-16T02:02:19.663+0000] {task_command.py:467} INFO - Running <TaskInstance: example_mssql.get_all_countries scheduled__2024-10-15T00:00:00+00:00 [running]> on host a4f82a437ff2
+[2024-10-16T02:02:19.782+0000] {taskinstance.py:3131} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='example_mssql' AIRFLOW_CTX_TASK_ID='get_all_countries' AIRFLOW_CTX_EXECUTION_DATE='2024-10-15T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-10-15T00:00:00+00:00'
+[2024-10-16T02:02:19.784+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-10-16T02:02:19.784+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-10-16T02:02:19.785+0000] {logging_mixin.py:190} INFO - Current task name:get_all_countries state:running start_date:2024-10-16 02:02:19.572584+00:00
+[2024-10-16T02:02:19.785+0000] {logging_mixin.py:190} INFO - Dag name:example_mssql and current dag run status:running
+[2024-10-16T02:02:19.785+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-10-16T02:02:19.786+0000] {sql.py:266} INFO - Executing: SELECT * FROM Country;
+[2024-10-16T02:02:19.795+0000] {base.py:84} INFO - Retrieving connection '***_mssql'
+[2024-10-16T02:02:19.804+0000] {base.py:84} INFO - Retrieving connection '***_mssql'
+[2024-10-16T02:02:19.895+0000] {sql.py:542} INFO - Running statement: SELECT * FROM Country;, parameters: None
+[2024-10-16T02:02:19.937+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-10-16T02:02:19.938+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=example_mssql, task_id=get_all_countries, run_id=scheduled__2024-10-15T00:00:00+00:00, execution_date=20241015T000000, start_date=20241016T020219, end_date=20241016T020219
+[2024-10-16T02:02:19.946+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-10-16T02:02:19.946+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-10-16T02:02:19.946+0000] {logging_mixin.py:190} INFO - Dag name:example_mssql queued_at:2024-10-16 02:01:59.791704+00:00
+[2024-10-16T02:02:19.947+0000] {logging_mixin.py:190} INFO - Task hostname:a4f82a437ff2 operator:SQLExecuteQueryOperator
+[2024-10-16T02:02:19.984+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-10-16T02:02:20.015+0000] {taskinstance.py:3900} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-10-16T02:02:20.017+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

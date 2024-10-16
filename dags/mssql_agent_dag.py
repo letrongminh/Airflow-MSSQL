@@ -85,7 +85,7 @@ default_args = {
     'email': ['your@email.com'],
     'email_on_failure': False,
     'email_on_retry': False,
-    'retries': 1,
+    'retries': 0,
     'retry_delay': timedelta(minutes=5)
 }
 
@@ -158,6 +158,7 @@ def create_sql_agent_job(job_name):
 
     # Tạo SQL Server Agent Job với một bước đơn giản
     create_job_query = f"""
+    -- EXEC sp_delete_job @job_name = N'SimpleCustomerJob' ;
     IF NOT EXISTS (SELECT * FROM msdb.dbo.sysjobs WHERE name = '{job_name}')
     BEGIN
         -- Tạo job mới
@@ -166,9 +167,13 @@ def create_sql_agent_job(job_name):
         -- Thêm bước vào job, ví dụ thực hiện SELECT trên bảng Customer
         EXEC msdb.dbo.sp_add_jobstep 
             @job_name = '{job_name}', 
-            @step_name = 'Select from Customer', 
+            @step_name = 'Select from Customer',
             @subsystem = 'TSQL',
-            @command = 'SELECT * FROM NVDB.dbo.Customer',
+            
+            -- @command = 'SELECT * FROM NVDB.dbo.Customer',
+            @command = '
+                WAITFOR DELAY ''00:03:00'';  -- Chờ 3 phút
+                SELECT * FROM NVDB.dbo.Customer',
             @on_success_action = 1, -- Chuyển sang bước tiếp theo nếu thành công
             @on_fail_action = 2; -- Dừng lại nếu thất bại
 
@@ -218,7 +223,7 @@ def execute_sql_agent_job(job_name):
     # Dùng vòng lặp để kiểm tra trạng thái cho đến khi job hoàn thành
     job_completed = False
     while not job_completed:
-        # Truy vấn trạng thái job từ bảng sysjobactivity
+        # Query status of each step in the job from sysjobhistory and sysjobsteps
         job_status_query = f"""
         SELECT ja.run_status, 
                js.step_id, 
