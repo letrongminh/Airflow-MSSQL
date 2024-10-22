@@ -1,6 +1,5 @@
 from airflow import DAG
 from airflow.operators.python_operator import PythonOperator
-from airflow.sensors.sql_sensor import SqlSensor
 from airflow.hooks.mssql_hook import MsSqlHook
 from datetime import datetime, timedelta
 import time
@@ -26,8 +25,8 @@ dag = DAG(
     tags=['minhlt9'],
 )
 
-# Define the Python function to check the status of the job
-def check_job_status(**kwargs):
+# Define the Python function to monitor the status of the job
+def monitor_job_status(**kwargs):
     hook = MsSqlHook(mssql_conn_id='airflow_mssql', schema='msdb')
     job_name = kwargs['job_name']
     conn = hook.get_conn()
@@ -85,27 +84,10 @@ def on_job_success(**kwargs):
 def on_job_failure(**kwargs):
     print(f"MSSQL Agent Job {kwargs['job_name']} failed.")
 
-# Define the SQL Sensor to wait for the job to complete
-job_sensor = SqlSensor(
-    task_id='wait_for_job_completion',
-    conn_id='airflow_mssql',
-    sql="""
-    SELECT TOP 1 1
-    FROM msdb.dbo.sysjobhistory
-    WHERE job_id = (SELECT job_id FROM msdb.dbo.sysjobs WHERE name = '{{ params.job_name }}')
-    AND run_date > CONVERT(int, CONVERT(varchar(8), GETDATE(), 112))
-    """,
-    params={'job_name': 'SimpleCustomerJob'},
-    poke_interval=5,  # check every 5 seconds
-    timeout=30,  # timeout after 30 seconds
-    mode='poke',  # poke mode means the sensor will keep checking until the condition is met
-    dag=dag
-)
-
 # Define the tasks to check the job status and handle success/failure
 check_status = PythonOperator(
-    task_id='check_job_status',
-    python_callable=check_job_status,
+    task_id='monitor_job_status',
+    python_callable=monitor_job_status,
     op_kwargs={'job_name': 'SimpleCustomerJob'},
     dag=dag
 )
@@ -126,4 +108,4 @@ failure_task = PythonOperator(
     dag=dag
 )
 
-job_sensor >> check_status >> [success_task, failure_task]
+check_status >> [success_task, failure_task]
