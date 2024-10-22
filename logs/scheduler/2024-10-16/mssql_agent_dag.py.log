@@ -4467,3 +4467,668 @@
 [2024-10-16T10:27:39.216+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:27:39.216+0000] {dag.py:3239} INFO - Sync 1 DAGs
 [2024-10-16T10:27:39.245+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:27:39.245+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
 [2024-10-16T10:27:39.267+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.103 seconds
+[2024-10-16T10:28:09.937+0000] {processor.py:186} INFO - Started process (PID=42971) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:28:09.939+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:28:09.940+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:28:09.939+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:28:09.946+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:28:09.971+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:28:09.970+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:28:09.996+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:28:09.996+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:28:10.013+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.082 seconds
+[2024-10-16T10:28:40.057+0000] {processor.py:186} INFO - Started process (PID=43038) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:28:40.059+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:28:40.060+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:28:40.060+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:28:40.067+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:28:40.090+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:28:40.090+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:28:40.115+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:28:40.115+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:28:40.132+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.082 seconds
+[2024-10-16T10:29:10.993+0000] {processor.py:186} INFO - Started process (PID=43105) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:29:10.994+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:29:10.996+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:29:10.996+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:29:11.004+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:29:11.030+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:29:11.029+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:29:11.054+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:29:11.054+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:29:11.072+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.088 seconds
+[2024-10-16T10:29:41.944+0000] {processor.py:186} INFO - Started process (PID=43171) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:29:41.946+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:29:41.948+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:29:41.947+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:29:41.955+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:29:41.981+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:29:41.980+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:29:42.005+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:29:42.005+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:29:42.022+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.086 seconds
+[2024-10-16T10:30:12.761+0000] {processor.py:186} INFO - Started process (PID=43238) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:30:12.763+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:30:12.764+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:30:12.764+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:30:12.770+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:30:12.794+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:30:12.794+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:30:12.820+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:30:12.820+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:30:12.836+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.083 seconds
+[2024-10-16T10:30:43.737+0000] {processor.py:186} INFO - Started process (PID=43305) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:30:43.739+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:30:43.740+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:30:43.740+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:30:43.747+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:30:43.772+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:30:43.771+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:30:43.794+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:30:43.794+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:30:43.812+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.081 seconds
+[2024-10-16T10:31:14.741+0000] {processor.py:186} INFO - Started process (PID=43372) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:31:14.742+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:31:14.744+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:31:14.744+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:31:14.752+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:31:14.791+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:31:14.790+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:31:14.818+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:31:14.818+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:31:14.837+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.105 seconds
+[2024-10-16T10:31:45.333+0000] {processor.py:186} INFO - Started process (PID=43439) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:31:45.335+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:31:45.336+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:31:45.336+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:31:45.343+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:31:45.370+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:31:45.370+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:31:45.395+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:31:45.395+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:31:45.416+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.091 seconds
+[2024-10-16T10:32:16.306+0000] {processor.py:186} INFO - Started process (PID=43506) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:32:16.307+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:32:16.308+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:32:16.307+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:32:16.314+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:32:16.336+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:32:16.336+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:32:16.356+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:32:16.356+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:32:16.372+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.072 seconds
+[2024-10-16T10:32:46.653+0000] {processor.py:186} INFO - Started process (PID=43573) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:32:46.654+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:32:46.656+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:32:46.655+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:32:46.661+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:32:46.685+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:32:46.685+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:32:46.711+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:32:46.711+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:32:46.730+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.084 seconds
+[2024-10-16T10:33:17.684+0000] {processor.py:186} INFO - Started process (PID=43640) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:33:17.685+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:33:17.687+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:33:17.687+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:33:17.695+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:33:17.720+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:33:17.720+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:33:17.743+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:33:17.743+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:33:17.762+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.088 seconds
+[2024-10-16T10:33:47.842+0000] {processor.py:186} INFO - Started process (PID=43707) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:33:47.843+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:33:47.845+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:33:47.844+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:33:47.851+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:33:47.876+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:33:47.876+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:33:47.901+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:33:47.901+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:33:47.920+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.085 seconds
+[2024-10-16T10:34:18.252+0000] {processor.py:186} INFO - Started process (PID=43774) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:34:18.253+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:34:18.254+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:34:18.254+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:34:18.260+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:34:18.285+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:34:18.285+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:34:18.308+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:34:18.308+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:34:18.325+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.080 seconds
+[2024-10-16T10:34:48.626+0000] {processor.py:186} INFO - Started process (PID=43840) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:34:48.627+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:34:48.629+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:34:48.629+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:34:48.635+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:34:48.658+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:34:48.657+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:34:48.683+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:34:48.683+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:34:48.701+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.084 seconds
+[2024-10-16T10:35:19.173+0000] {processor.py:186} INFO - Started process (PID=43907) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:35:19.174+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:35:19.175+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:35:19.175+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:35:19.182+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:35:19.208+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:35:19.207+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:35:19.237+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:35:19.237+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:35:19.255+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.089 seconds
+[2024-10-16T10:35:49.416+0000] {processor.py:186} INFO - Started process (PID=43975) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:35:49.418+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:35:49.419+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:35:49.419+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:35:49.426+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:35:49.451+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:35:49.450+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:35:49.475+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:35:49.474+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:35:49.490+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.082 seconds
+[2024-10-16T10:36:20.052+0000] {processor.py:186} INFO - Started process (PID=44042) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:36:20.053+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:36:20.055+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:36:20.054+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:36:20.062+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:36:20.088+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:36:20.088+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:36:20.113+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:36:20.112+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:36:20.131+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.088 seconds
+[2024-10-16T10:36:50.306+0000] {processor.py:186} INFO - Started process (PID=44109) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:36:50.307+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:36:50.309+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:36:50.309+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:36:50.316+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:36:50.340+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:36:50.340+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:36:50.364+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:36:50.364+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:36:50.382+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.085 seconds
+[2024-10-16T10:37:20.480+0000] {processor.py:186} INFO - Started process (PID=44175) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:37:20.482+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:37:20.483+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:37:20.483+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:37:20.491+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:37:20.518+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:37:20.518+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:37:20.541+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:37:20.541+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:37:20.557+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.085 seconds
+[2024-10-16T10:37:51.062+0000] {processor.py:186} INFO - Started process (PID=44242) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:37:51.063+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:37:51.064+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:37:51.064+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:37:51.072+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:37:51.103+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:37:51.103+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:37:51.138+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:37:51.138+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:37:51.158+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.105 seconds
+[2024-10-16T10:38:21.908+0000] {processor.py:186} INFO - Started process (PID=44308) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:38:21.909+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:38:21.911+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:38:21.910+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:38:21.917+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:38:21.944+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:38:21.944+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:38:21.967+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:38:21.966+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:38:21.985+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.084 seconds
+[2024-10-16T10:38:52.025+0000] {processor.py:186} INFO - Started process (PID=44375) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:38:52.026+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:38:52.028+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:38:52.027+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:38:52.034+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:38:52.059+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:38:52.059+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:38:52.083+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:38:52.083+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:38:52.101+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.084 seconds
+[2024-10-16T10:39:22.171+0000] {processor.py:186} INFO - Started process (PID=44441) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:39:22.173+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:39:22.174+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:39:22.174+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:39:22.180+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:39:22.241+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:39:22.240+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:39:22.273+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:39:22.273+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:39:22.290+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.127 seconds
+[2024-10-16T10:39:52.961+0000] {processor.py:186} INFO - Started process (PID=44507) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:39:52.962+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:39:52.964+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:39:52.963+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:39:52.970+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:39:53.020+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:39:53.020+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:39:53.047+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:39:53.046+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:39:53.065+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.112 seconds
+[2024-10-16T10:40:23.494+0000] {processor.py:186} INFO - Started process (PID=44574) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:40:23.496+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:40:23.498+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:40:23.497+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:40:23.505+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:40:23.530+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:40:23.529+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:40:23.554+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:40:23.554+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:40:23.574+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.087 seconds
+[2024-10-16T10:40:54.028+0000] {processor.py:186} INFO - Started process (PID=44640) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:40:54.030+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:40:54.032+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:40:54.031+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:40:54.038+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:40:54.063+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:40:54.063+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:40:54.088+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:40:54.088+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:40:54.111+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.090 seconds
+[2024-10-16T10:41:24.689+0000] {processor.py:186} INFO - Started process (PID=44706) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:41:24.690+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:41:24.691+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:41:24.691+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:41:24.699+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:41:24.724+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:41:24.724+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:41:24.751+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:41:24.751+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:41:24.770+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.094 seconds
+[2024-10-16T10:41:55.625+0000] {processor.py:186} INFO - Started process (PID=44773) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:41:55.626+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:41:55.627+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:41:55.627+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:41:55.635+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:41:55.662+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:41:55.662+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:41:55.687+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:41:55.687+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:41:55.706+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.089 seconds
+[2024-10-16T10:42:26.375+0000] {processor.py:186} INFO - Started process (PID=44840) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:42:26.377+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:42:26.378+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:42:26.378+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:42:26.385+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:42:26.411+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:42:26.411+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:42:26.436+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:42:26.436+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:42:26.454+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.087 seconds
+[2024-10-16T10:42:57.081+0000] {processor.py:186} INFO - Started process (PID=44907) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:42:57.081+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:42:57.083+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:42:57.083+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:42:57.090+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:42:57.113+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:42:57.113+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:42:57.136+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:42:57.136+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:42:57.154+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.081 seconds
+[2024-10-16T10:43:27.906+0000] {processor.py:186} INFO - Started process (PID=44973) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:43:27.907+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:43:27.909+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:43:27.909+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:43:27.917+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:43:27.940+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:43:27.940+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:43:27.964+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:43:27.963+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:43:27.980+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.083 seconds
+[2024-10-16T10:43:58.175+0000] {processor.py:186} INFO - Started process (PID=45039) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:43:58.176+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:43:58.177+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:43:58.177+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:43:58.183+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:43:58.207+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:43:58.207+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:43:58.230+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:43:58.230+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:43:58.247+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.080 seconds
+[2024-10-16T10:44:28.690+0000] {processor.py:186} INFO - Started process (PID=45106) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:44:28.692+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:44:28.693+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:44:28.693+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:44:28.700+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:44:28.724+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:44:28.724+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:44:28.747+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:44:28.747+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:44:28.764+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.083 seconds
+[2024-10-16T10:44:59.151+0000] {processor.py:186} INFO - Started process (PID=45173) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:44:59.153+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:44:59.154+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:44:59.154+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:44:59.161+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:44:59.186+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:44:59.185+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:44:59.208+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:44:59.208+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:44:59.225+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.082 seconds
+[2024-10-16T10:45:29.647+0000] {processor.py:186} INFO - Started process (PID=45240) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:45:29.648+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:45:29.650+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:45:29.650+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:45:29.656+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:45:29.679+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:45:29.678+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:45:29.701+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:45:29.701+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:45:29.719+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.080 seconds
+[2024-10-16T10:45:59.804+0000] {processor.py:186} INFO - Started process (PID=45307) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:45:59.806+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:45:59.807+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:45:59.807+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:45:59.814+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:45:59.836+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:45:59.836+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:45:59.859+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:45:59.859+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:45:59.876+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.081 seconds
+[2024-10-16T10:46:30.472+0000] {processor.py:186} INFO - Started process (PID=45374) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:46:30.474+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:46:30.475+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:46:30.475+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:46:30.483+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:46:30.509+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:46:30.508+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:46:30.532+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:46:30.532+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:46:30.550+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.087 seconds
+[2024-10-16T10:47:01.137+0000] {processor.py:186} INFO - Started process (PID=45441) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:47:01.138+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:47:01.140+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:47:01.139+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:47:01.146+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:47:01.174+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:47:01.174+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:47:01.197+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:47:01.197+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:47:01.215+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.087 seconds
+[2024-10-16T10:47:31.689+0000] {processor.py:186} INFO - Started process (PID=45507) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:47:31.691+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:47:31.692+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:47:31.692+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:47:31.699+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:47:31.725+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:47:31.725+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:47:31.753+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:47:31.753+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:47:31.769+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.089 seconds
+[2024-10-16T10:48:02.126+0000] {processor.py:186} INFO - Started process (PID=45573) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:48:02.127+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:48:02.128+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:48:02.128+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:48:02.135+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:48:02.160+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:48:02.160+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:48:02.355+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:48:02.355+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:48:02.374+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.256 seconds
+[2024-10-16T10:54:29.264+0000] {processor.py:186} INFO - Started process (PID=45619) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:54:29.271+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:54:29.278+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:54:29.275+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:54:29.293+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:54:29.338+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:54:29.338+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:54:29.371+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:54:29.370+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:54:29.397+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.156 seconds
+[2024-10-16T10:55:00.140+0000] {processor.py:186} INFO - Started process (PID=45686) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:55:00.141+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:55:00.143+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:55:00.142+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:55:00.149+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:55:00.174+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:55:00.174+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:55:00.197+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:55:00.196+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:55:00.213+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.081 seconds
+[2024-10-16T10:55:30.501+0000] {processor.py:186} INFO - Started process (PID=45753) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:55:30.503+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:55:30.505+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:55:30.504+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:55:30.511+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:55:30.536+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:55:30.536+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:55:30.560+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:55:30.560+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:55:30.580+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.086 seconds
+[2024-10-16T10:56:01.487+0000] {processor.py:186} INFO - Started process (PID=45820) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:56:01.489+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:56:01.491+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:56:01.490+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:56:01.497+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:56:01.523+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:56:01.522+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:56:01.547+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:56:01.546+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:56:01.566+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.085 seconds
+[2024-10-16T10:56:31.767+0000] {processor.py:186} INFO - Started process (PID=45887) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:56:31.768+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:56:31.770+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:56:31.770+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:56:31.776+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:56:31.800+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:56:31.800+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:56:31.825+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:56:31.825+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:56:31.843+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.083 seconds
+[2024-10-16T10:57:01.997+0000] {processor.py:186} INFO - Started process (PID=45954) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:57:01.999+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:57:02.000+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:57:02.000+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:57:02.006+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:57:02.031+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:57:02.031+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:57:02.057+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:57:02.057+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:57:02.075+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.086 seconds
+[2024-10-16T10:57:32.320+0000] {processor.py:186} INFO - Started process (PID=46021) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:57:32.321+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:57:32.323+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:57:32.323+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:57:32.331+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:57:32.356+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:57:32.356+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:57:32.383+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:57:32.383+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:57:32.402+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.090 seconds
+[2024-10-16T10:58:02.738+0000] {processor.py:186} INFO - Started process (PID=46087) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:58:02.739+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:58:02.741+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:58:02.740+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:58:02.748+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:58:02.776+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:58:02.775+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:58:02.801+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:58:02.801+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:58:02.822+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.091 seconds
+[2024-10-16T10:58:33.243+0000] {processor.py:186} INFO - Started process (PID=46154) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:58:33.244+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:58:33.246+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:58:33.246+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:58:33.258+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:58:33.284+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:58:33.283+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:58:33.310+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:58:33.309+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:58:33.330+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.103 seconds
+[2024-10-16T10:59:03.922+0000] {processor.py:186} INFO - Started process (PID=46221) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:59:03.924+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:59:03.926+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:59:03.925+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:59:03.933+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:59:03.956+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:59:03.956+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:59:03.980+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:59:03.980+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:59:03.998+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.085 seconds
+[2024-10-16T10:59:34.175+0000] {processor.py:186} INFO - Started process (PID=46288) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:59:34.176+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T10:59:34.179+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:59:34.178+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:59:34.188+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T10:59:34.218+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:59:34.218+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T10:59:34.248+0000] {logging_mixin.py:190} INFO - [2024-10-16T10:59:34.248+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T10:59:34.267+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.101 seconds
+[2024-10-16T11:00:04.473+0000] {processor.py:186} INFO - Started process (PID=46355) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:00:04.474+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T11:00:04.476+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:00:04.475+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:00:04.482+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:00:04.506+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:00:04.505+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T11:00:04.532+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:00:04.532+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T11:00:04.550+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.085 seconds
+[2024-10-16T11:00:34.706+0000] {processor.py:186} INFO - Started process (PID=46422) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:00:34.708+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T11:00:34.710+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:00:34.709+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:00:34.717+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:00:34.742+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:00:34.742+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T11:00:34.765+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:00:34.765+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T11:00:34.783+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.085 seconds
+[2024-10-16T11:01:05.117+0000] {processor.py:186} INFO - Started process (PID=46489) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:01:05.119+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T11:01:05.120+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:01:05.120+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:01:05.127+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:01:05.153+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:01:05.153+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T11:01:05.180+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:01:05.180+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T11:01:05.200+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.090 seconds
+[2024-10-16T11:01:35.761+0000] {processor.py:186} INFO - Started process (PID=46556) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:01:35.762+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T11:01:35.763+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:01:35.763+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:01:35.770+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:01:35.795+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:01:35.795+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T11:01:35.821+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:01:35.821+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T11:01:35.838+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.084 seconds
+[2024-10-16T11:02:06.053+0000] {processor.py:186} INFO - Started process (PID=46623) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:02:06.054+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T11:02:06.056+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:02:06.056+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:02:06.062+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:02:06.087+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:02:06.086+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T11:02:06.110+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:02:06.110+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T11:02:06.128+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.083 seconds
+[2024-10-16T11:02:36.208+0000] {processor.py:186} INFO - Started process (PID=46690) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:02:36.209+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T11:02:36.210+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:02:36.210+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:02:36.216+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:02:36.241+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:02:36.241+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T11:02:36.264+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:02:36.264+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T11:02:36.279+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.080 seconds
+[2024-10-16T11:03:06.931+0000] {processor.py:186} INFO - Started process (PID=46757) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:03:06.934+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T11:03:06.936+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:03:06.936+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:03:06.946+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:03:06.973+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:03:06.973+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T11:03:06.996+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:03:06.996+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T11:03:07.015+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.094 seconds
+[2024-10-16T11:03:38.023+0000] {processor.py:186} INFO - Started process (PID=46825) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:03:38.024+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T11:03:38.025+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:03:38.025+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:03:38.031+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:03:38.056+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:03:38.056+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T11:03:38.079+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:03:38.079+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T11:03:38.096+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.080 seconds
+[2024-10-16T11:04:08.840+0000] {processor.py:186} INFO - Started process (PID=46892) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:04:08.841+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T11:04:08.843+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:04:08.842+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:04:08.850+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:04:08.874+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:04:08.874+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T11:04:08.898+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:04:08.897+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T11:04:08.915+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.084 seconds
+[2024-10-16T11:04:39.843+0000] {processor.py:186} INFO - Started process (PID=46960) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:04:39.844+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T11:04:39.846+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:04:39.845+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:04:39.853+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:04:39.877+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:04:39.877+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T11:04:39.901+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:04:39.901+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T11:04:39.919+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.084 seconds
+[2024-10-16T11:05:10.822+0000] {processor.py:186} INFO - Started process (PID=47027) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:05:10.824+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T11:05:10.825+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:05:10.825+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:05:10.832+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:05:10.856+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:05:10.856+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T11:05:10.879+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:05:10.879+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T11:05:10.896+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.082 seconds
+[2024-10-16T11:05:41.690+0000] {processor.py:186} INFO - Started process (PID=47093) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:05:41.691+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T11:05:41.693+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:05:41.692+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:05:41.700+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:05:41.725+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:05:41.725+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T11:05:41.749+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:05:41.749+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T11:05:41.766+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.085 seconds
+[2024-10-16T11:06:12.692+0000] {processor.py:186} INFO - Started process (PID=47159) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:06:12.694+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T11:06:12.695+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:06:12.695+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:06:12.703+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:06:12.727+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:06:12.727+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T11:06:12.750+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:06:12.750+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T11:06:12.767+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.084 seconds
+[2024-10-16T11:06:43.514+0000] {processor.py:186} INFO - Started process (PID=47226) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:06:43.515+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T11:06:43.517+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:06:43.517+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:06:43.525+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:06:43.556+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:06:43.556+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T11:06:43.586+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:06:43.585+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T11:06:43.609+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.104 seconds
+[2024-10-16T11:07:14.402+0000] {processor.py:186} INFO - Started process (PID=47293) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:07:14.403+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T11:07:14.405+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:07:14.404+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:07:14.411+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:07:14.436+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:07:14.436+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T11:07:14.460+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:07:14.459+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T11:07:14.477+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.082 seconds
+[2024-10-16T11:07:45.258+0000] {processor.py:186} INFO - Started process (PID=47360) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:07:45.259+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T11:07:45.261+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:07:45.260+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:07:45.268+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:07:45.294+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:07:45.294+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T11:07:45.317+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:07:45.317+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T11:07:45.334+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.085 seconds
+[2024-10-16T11:08:16.121+0000] {processor.py:186} INFO - Started process (PID=47427) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:08:16.123+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T11:08:16.124+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:08:16.124+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:08:16.130+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:08:16.154+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:08:16.154+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T11:08:16.178+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:08:16.177+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T11:08:16.194+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.081 seconds
+[2024-10-16T11:08:47.007+0000] {processor.py:186} INFO - Started process (PID=47493) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:08:47.008+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T11:08:47.009+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:08:47.009+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:08:47.015+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:08:47.039+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:08:47.039+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T11:08:47.062+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:08:47.061+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T11:08:47.079+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.079 seconds
+[2024-10-16T11:09:17.940+0000] {processor.py:186} INFO - Started process (PID=47560) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:09:17.942+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T11:09:17.943+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:09:17.943+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:09:17.949+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:09:17.974+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:09:17.973+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T11:09:17.996+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:09:17.996+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T11:09:18.013+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.081 seconds
+[2024-10-16T11:09:48.793+0000] {processor.py:186} INFO - Started process (PID=47627) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:09:48.794+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T11:09:48.796+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:09:48.795+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:09:48.802+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:09:48.826+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:09:48.826+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T11:09:48.850+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:09:48.849+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T11:09:48.868+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.084 seconds
+[2024-10-16T11:10:19.590+0000] {processor.py:186} INFO - Started process (PID=47694) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:10:19.592+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T11:10:19.593+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:10:19.593+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:10:19.600+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:10:19.629+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:10:19.628+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T11:10:19.650+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:10:19.650+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T11:10:19.666+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.083 seconds
+[2024-10-16T11:10:50.360+0000] {processor.py:186} INFO - Started process (PID=47760) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:10:50.361+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T11:10:50.363+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:10:50.362+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:10:50.369+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:10:50.395+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:10:50.395+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T11:10:50.418+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:10:50.417+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T11:10:50.433+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.081 seconds
+[2024-10-16T11:11:21.095+0000] {processor.py:186} INFO - Started process (PID=47828) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:11:21.097+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T11:11:21.098+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:11:21.098+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:11:21.105+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:11:21.129+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:11:21.129+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T11:11:21.153+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:11:21.152+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T11:11:21.170+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.083 seconds
+[2024-10-16T11:11:51.804+0000] {processor.py:186} INFO - Started process (PID=47895) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:11:51.805+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T11:11:51.806+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:11:51.806+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:11:51.813+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:11:51.836+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:11:51.836+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T11:11:51.859+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:11:51.859+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T11:11:51.876+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.080 seconds
+[2024-10-16T11:12:22.554+0000] {processor.py:186} INFO - Started process (PID=47962) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:12:22.555+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T11:12:22.556+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:12:22.556+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:12:22.562+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:12:22.584+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:12:22.584+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T11:12:22.608+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:12:22.607+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T11:12:22.624+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.078 seconds
+[2024-10-16T11:12:53.291+0000] {processor.py:186} INFO - Started process (PID=48029) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:12:53.292+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T11:12:53.294+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:12:53.293+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:12:53.300+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:12:53.326+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:12:53.325+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T11:12:53.350+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:12:53.350+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T11:12:53.369+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.085 seconds
+[2024-10-16T11:13:24.327+0000] {processor.py:186} INFO - Started process (PID=48096) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:13:24.329+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T11:13:24.330+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:13:24.330+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:13:24.337+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:13:24.363+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:13:24.363+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T11:13:24.386+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:13:24.386+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T11:13:24.402+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.084 seconds
+[2024-10-16T11:13:55.134+0000] {processor.py:186} INFO - Started process (PID=48163) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:13:55.135+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T11:13:55.137+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:13:55.136+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:13:55.144+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:13:55.169+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:13:55.169+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T11:13:55.193+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:13:55.192+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T11:13:55.209+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.083 seconds
+[2024-10-16T11:14:25.949+0000] {processor.py:186} INFO - Started process (PID=48229) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:14:25.951+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T11:14:25.952+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:14:25.952+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:14:25.958+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:14:25.984+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:14:25.983+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T11:14:26.011+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:14:26.011+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T11:14:26.032+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.089 seconds
+[2024-10-16T11:14:56.895+0000] {processor.py:186} INFO - Started process (PID=48296) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:14:56.895+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T11:14:56.897+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:14:56.896+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:14:56.903+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:14:56.927+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:14:56.927+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T11:14:56.950+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:14:56.950+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T11:14:56.967+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.080 seconds
+[2024-10-16T11:15:27.823+0000] {processor.py:186} INFO - Started process (PID=48363) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:15:27.824+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T11:15:27.826+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:15:27.825+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:15:27.832+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:15:27.856+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:15:27.855+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T11:15:27.879+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:15:27.878+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T11:15:27.895+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.081 seconds
+[2024-10-16T11:15:58.571+0000] {processor.py:186} INFO - Started process (PID=48430) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:15:58.572+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T11:15:58.574+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:15:58.573+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:15:58.580+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:15:58.605+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:15:58.605+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T11:15:58.629+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:15:58.629+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T11:15:58.646+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.083 seconds
+[2024-10-16T11:16:29.427+0000] {processor.py:186} INFO - Started process (PID=48497) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:16:29.428+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T11:16:29.430+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:16:29.430+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:16:29.437+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:16:29.462+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:16:29.462+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T11:16:29.485+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:16:29.485+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T11:16:29.502+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.083 seconds
+[2024-10-16T11:17:00.488+0000] {processor.py:186} INFO - Started process (PID=48563) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:17:00.490+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T11:17:00.492+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:17:00.492+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:17:00.499+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:17:00.526+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:17:00.526+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T11:17:00.552+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:17:00.552+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T11:17:00.573+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.094 seconds
+[2024-10-16T11:17:30.962+0000] {processor.py:186} INFO - Started process (PID=48630) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:17:30.963+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T11:17:30.965+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:17:30.964+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:17:30.972+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:17:31.000+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:17:31.000+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T11:17:31.025+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:17:31.025+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T11:17:31.043+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.090 seconds
+[2024-10-16T11:18:01.493+0000] {processor.py:186} INFO - Started process (PID=48696) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:18:01.494+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T11:18:01.495+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:18:01.495+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:18:01.501+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:18:01.525+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:18:01.525+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T11:18:01.550+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:18:01.550+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T11:18:01.569+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.083 seconds
+[2024-10-16T11:18:32.072+0000] {processor.py:186} INFO - Started process (PID=48763) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:18:32.079+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T11:18:32.081+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:18:32.080+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:18:32.088+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:18:32.112+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:18:32.112+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T11:18:32.138+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:18:32.138+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T11:18:32.156+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.092 seconds
+[2024-10-16T11:19:02.548+0000] {processor.py:186} INFO - Started process (PID=48830) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:19:02.549+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T11:19:02.551+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:19:02.550+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:19:02.557+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:19:02.581+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:19:02.581+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T11:19:02.605+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:19:02.605+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T11:19:02.623+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.082 seconds
+[2024-10-16T11:19:32.817+0000] {processor.py:186} INFO - Started process (PID=48896) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:19:32.818+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T11:19:32.819+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:19:32.819+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:19:32.825+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:19:32.850+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:19:32.850+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T11:19:32.879+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:19:32.879+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T11:19:32.899+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.089 seconds
+[2024-10-16T11:20:03.179+0000] {processor.py:186} INFO - Started process (PID=48968) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:20:03.181+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T11:20:03.183+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:20:03.182+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:20:03.190+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:20:03.233+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:20:03.232+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T11:20:03.263+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:20:03.263+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T11:20:03.288+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.117 seconds
+[2024-10-16T11:20:33.348+0000] {processor.py:186} INFO - Started process (PID=49035) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:20:33.350+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T11:20:33.351+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:20:33.351+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:20:33.360+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:20:33.384+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:20:33.383+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T11:20:33.410+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:20:33.409+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T11:20:33.430+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.090 seconds
+[2024-10-16T11:25:41.022+0000] {processor.py:186} INFO - Started process (PID=49096) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:25:41.024+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T11:25:41.027+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:25:41.026+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:25:41.041+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:25:41.086+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:25:41.086+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T11:25:41.131+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:25:41.131+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T11:25:41.167+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.158 seconds
+[2024-10-16T11:26:11.967+0000] {processor.py:186} INFO - Started process (PID=49164) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:26:11.969+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T11:26:11.970+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:26:11.970+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:26:11.976+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:26:12.003+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:26:12.002+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T11:26:12.028+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:26:12.027+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T11:26:12.046+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.087 seconds
+[2024-10-16T11:26:42.558+0000] {processor.py:186} INFO - Started process (PID=49230) to work on /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:26:42.560+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/mssql_agent_dag.py for tasks to queue
+[2024-10-16T11:26:42.561+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:26:42.561+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:26:42.567+0000] {processor.py:925} INFO - DAG(s) 'mssql_agent_dag' retrieved from /opt/airflow/dags/mssql_agent_dag.py
+[2024-10-16T11:26:42.592+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:26:42.592+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-10-16T11:26:42.616+0000] {logging_mixin.py:190} INFO - [2024-10-16T11:26:42.615+0000] {dag.py:4180} INFO - Setting next_dagrun for mssql_agent_dag to None, run_after=None
+[2024-10-16T11:26:42.633+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/mssql_agent_dag.py took 0.082 seconds

@@ -3,6 +3,7 @@ from airflow.operators.python_operator import PythonOperator
 from airflow.sensors.sql_sensor import SqlSensor
 from airflow.hooks.mssql_hook import MsSqlHook
 from datetime import datetime, timedelta
+import time
 
 # Define the DAG with default arguments
 default_args = {
@@ -26,25 +27,56 @@ dag = DAG(
 )
 
 # Define the Python function to check the status of the job
-# MsSqlHook is used to connect to the MS SQL Server
-# query is used to get the latest run status of the job
 def check_job_status(**kwargs):
     hook = MsSqlHook(mssql_conn_id='airflow_mssql', schema='msdb')
     job_name = kwargs['job_name']
-    query = f"""
-    SELECT TOP 1 run_status
-    FROM msdb.dbo.sysjobhistory
-    WHERE job_id = (SELECT job_id FROM msdb.dbo.sysjobs WHERE name = '{job_name}')
-    ORDER BY run_date DESC, run_time DESC
-    """
-    result = hook.get_first(query) # get the first row of the result
-    if result:
-        status = result[0]
-        if status == 1:
-            return 'success'
-        elif status in [0, 2, 3]:
-            return 'failure'
-    return None
+    conn = hook.get_conn()
+    cursor = conn.cursor()
+
+    # Get job_id from job_name
+    job_id_query = f"SELECT job_id FROM msdb.dbo.sysjobs WHERE name = '{job_name}'"
+    cursor.execute(job_id_query)
+    job_id = cursor.fetchone()[0]
+
+    # Loop to check job status
+    job_completed = False
+    while not job_completed:
+        job_status_query = f"""
+        SELECT 
+            ja.run_requested_date,
+            ISNULL(ja.stop_execution_date, GETDATE()) AS stop_execution_date,
+            DATEDIFF(SECOND, ja.run_requested_date, ISNULL(ja.stop_execution_date, GETDATE())) AS duration,
+            CASE 
+                WHEN ja.stop_execution_date IS NULL THEN 'Running'
+                WHEN h.run_status = 1 THEN 'Succeeded'
+                WHEN h.run_status = 0 THEN 'Failed'
+                ELSE 'Unknown'
+            END AS job_status
+        FROM msdb.dbo.sysjobactivity ja
+        LEFT JOIN msdb.dbo.sysjobhistory h ON ja.job_id = h.job_id AND ja.job_history_id = h.instance_id
+        WHERE ja.job_id = '{job_id}' AND ja.start_execution_date IS NOT NULL
+        """
+        cursor.execute(job_status_query)
+        job_status = cursor.fetchone()
+
+        if job_status:
+            run_requested_date, stop_execution_date, duration, status = job_status
+            print(f"Job status: {status}, Duration: {duration} seconds")
+
+            if status in ('Succeeded', 'Failed'):
+                job_completed = True
+        else:
+            print("Job status: Running")
+
+        if not job_completed:
+            time.sleep(5)  # Wait 5 seconds before checking again
+
+    print(f"Job {job_name} completed with status: {status}")
+
+    cursor.close()
+    conn.close()
+
+    return status
 
 # Define the Python functions to print the job status
 def on_job_success(**kwargs):
@@ -64,9 +96,9 @@ job_sensor = SqlSensor(
     AND run_date > CONVERT(int, CONVERT(varchar(8), GETDATE(), 112))
     """,
     params={'job_name': 'SimpleCustomerJob'},
-    poke_interval=5, # check every 5 seconds
-    timeout=30, # timeout after 30 seconds
-    mode='poke', # poke mode means the sensor will keep checking until the condition is met
+    poke_interval=5,  # check every 5 seconds
+    timeout=30,  # timeout after 30 seconds
+    mode='poke',  # poke mode means the sensor will keep checking until the condition is met
     dag=dag
 )
 
@@ -95,4 +127,3 @@ failure_task = PythonOperator(
 )
 
 job_sensor >> check_status >> [success_task, failure_task]
-# check_status >> [success_task, failure_task]
